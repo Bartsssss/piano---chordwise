@@ -97,8 +97,48 @@
           '<span class="progress-track"><span style="width:' + Math.round(100 * done / total) + '%"></span></span>' +
           '<span class="muted" style="font-size:.85rem">' + (done ? done + ' of ' + total + ' done' : 'Not started') + '</span></button>';
       }).join('') + '</div>' +
+      '<section class="backup step-card"><h3>Your progress</h3>' +
+      '<p class="muted" style="font-size:.88rem">Progress is saved on this device only. Save it to a file to keep a backup or move it to another phone or computer, then load that file there.</p>' +
+      '<div class="row"><button class="btn small" data-export>Save progress file</button>' +
+      '<button class="btn small" data-import>Load progress file</button>' +
+      '<input type="file" accept=".json,application/json" data-import-file hidden></div>' +
+      '<p class="backup-msg muted" data-backup-msg aria-live="polite"></p></section>' +
       '<p class="footer-note">Works best with a real piano or keyboard nearby. No piano? Switch to Tap keys in any lesson.</p>';
     $app.querySelectorAll('[data-course]').forEach(b => b.onclick = () => { S.course = S.courses[+b.dataset.course]; S.view = 'course'; render(); window.scrollTo(0, 0); });
+    bindBackup();
+  }
+
+  // ---------- progress export / import ----------
+  const BACKUP_KEYS = ['progress', 'input', 'tol', 'showKeys'];
+  function bindBackup() {
+    const msg = $app.querySelector('[data-backup-msg]');
+    const file = $app.querySelector('[data-import-file]');
+    $app.querySelector('[data-export]').onclick = () => {
+      const data = { app: 'chordwise', version: 1, exported: new Date().toISOString(), data: {} };
+      BACKUP_KEYS.forEach(k => { const v = store.get(k, undefined); if (v !== undefined) data.data[k] = v; });
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'chordwise-progress-' + new Date().toISOString().slice(0, 10) + '.json';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+      msg.textContent = 'Progress file saved.';
+    };
+    $app.querySelector('[data-import]').onclick = () => file.click();
+    file.onchange = () => {
+      const f = file.files && file.files[0];
+      if (!f) return;
+      f.text().then(txt => {
+        const obj = JSON.parse(txt);
+        if (!obj || obj.app !== 'chordwise' || typeof obj.data !== 'object' || typeof (obj.data.progress || {}) !== 'object') throw new Error('bad');
+        if (!confirm('Replace the progress on this device with the progress from this file?')) return;
+        BACKUP_KEYS.forEach(k => { if (k in obj.data) store.set(k, obj.data[k]); });
+        S.progress = store.get('progress', {}); S.input = store.get('input', 'mic');
+        S.tol = store.get('tol', 'normal'); S.showKeys = store.get('showKeys', true);
+        render();
+        const m = $app.querySelector('[data-backup-msg]'); if (m) m.textContent = 'Progress loaded.';
+      }).catch(() => { msg.textContent = 'That file is not a Chordwise progress file.'; file.value = ''; });
+    };
   }
 
   function renderCourse() {
