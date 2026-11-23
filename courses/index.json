@@ -1,3 +1,7 @@
 {
-  "courses": ["chord-progressions.json"]
+  "courses": [
+    "chord-progressions.json",
+    "playing-exercises.json",
+    "beatles-songs.json"
+  ]
 }

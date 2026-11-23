@@ -1,0 +1,1880 @@
+{
+ "id": "playing-exercises",
+ "version": 1,
+ "title": "Playing Exercises",
+ "subtitle": "Finger dexterity for both hands, scales, and playing by ear",
+ "description": "Daily finger exercises for both hands, the scales you need for real songs, and how scales help you play by ear. Every exercise comes with a practice goal: how many times, and how fast.",
+ "defaultKey": "C",
+ "lessons": [
+  {
+   "id": "hands",
+   "part": "Getting started",
+   "title": "Finger numbers and a relaxed hand",
+   "summary": "Number your fingers and find a hand shape that can move fast without strain.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Fingers have numbers",
+     "body": "In piano music each finger has a number, the same on both hands: **1 = thumb, 2 = index, 3 = middle, 4 = ring, 5 = little finger.**\n\nIn these exercises the small number under each note tells you which finger to use. Using the same fingers every time is what turns a pattern into an automatic movement."
+    },
+    {
+     "type": "text",
+     "title": "The hand shape",
+     "body": "Let your arm hang loose next to your body, then lift your hand onto the keys without changing its shape. The fingers stay gently curved, as if holding a small ball. Play on the fingertips, and the thumb on its side.\n\nKeep the wrist level and loose, not dropped and not raised. Speed comes from **relaxation**, not from force. If your hand or forearm feels tight, stop, shake it out and play slower."
+    },
+    {
+     "type": "text",
+     "title": "The C position",
+     "body": "Put your **right thumb (1) on middle C**. Fingers 2, 3, 4 and 5 rest on D, E, F and G.\n\nFor the **left hand**, put **finger 5 on the C below middle C**. Fingers 4, 3, 2 and 1 rest on D, E, F and G, so your left thumb ends on G."
+    },
+    {
+     "type": "play-note",
+     "prompt": "Right hand in C position: play the note under finger 3.",
+     "note": "E4",
+     "explain": "Finger 3 of the right hand sits on E."
+    },
+    {
+     "type": "play-note",
+     "prompt": "Left hand in C position: play the note under your left thumb.",
+     "note": "G3",
+     "explain": "In the left hand the numbers run the other way: the thumb (1) sits on G."
+    },
+    {
+     "type": "quiz",
+     "question": "Which finger is number 4?",
+     "options": [
+      "Index finger",
+      "Middle finger",
+      "Ring finger",
+      "Little finger"
+     ],
+     "answer": 2,
+     "explain": "1 thumb, 2 index, 3 middle, 4 ring, 5 little finger. Finger 4 is usually the weakest, so it gets extra exercises later."
+    }
+   ]
+  },
+  {
+   "id": "practice-plan",
+   "part": "Getting started",
+   "title": "How to practise (and how many times)",
+   "summary": "Slow, even repetitions with a simple rule for when to speed up.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Slow and even first",
+     "body": "Your fingers learn exactly what you repeat. If you play fast with mistakes, you practise the mistakes. So every exercise starts **slow and even**: every note equally loud and equally long.\n\nA good starting tempo is **60 bpm with one note per click** of a metronome. If that is still hard, go slower. There is no tempo too slow."
+    },
+    {
+     "type": "text",
+     "title": "The repetition rule",
+     "body": "For every exercise in this course:\n\n**1.** Play it **5 times per hand** (the app counts 3 for you, do the rest on your own).\n**2.** A round only counts if it is **clean**: no wrong notes, no stops.\n**3.** When **3 rounds in a row** are clean and relaxed, raise the tempo by **4 to 6 bpm** the next day.\n**4.** Give your weaker hand (usually the left) **2 extra rounds**.\n\nAfter a few weeks you play the same patterns twice as fast, without forcing it."
+    },
+    {
+     "type": "text",
+     "title": "How the app listens",
+     "body": "The app listens for one note at a time and moves to the next note as soon as it hears it. It waits for you if it misses one, so slow and clear playing works best.\n\nAt the end of each round you see how long it took. Try to make every round take about the same time: **even beats fast**.\n\nThe app cannot hear a metronome and your piano at the same time very well. Play with the app first to check the notes, then practise the same exercise with a metronome (on a second device, or with headphones) to work on tempo."
+    },
+    {
+     "type": "text",
+     "title": "Little and often",
+     "body": "**10 to 15 minutes every day** does more for finger dexterity than one long session a week. Your hands learn between sessions, especially during sleep.\n\nStop if anything hurts. Tension and pain are signals to slow down, not to push through."
+    },
+    {
+     "type": "quiz",
+     "question": "You played a five-finger pattern 3 times in a row cleanly at 60 bpm. What next?",
+     "options": [
+      "Jump to 100 bpm",
+      "Raise to about 65 bpm next time",
+      "Stop practising it",
+      "Play it louder"
+     ],
+     "answer": 1,
+     "explain": "Small steps of 4 to 6 bpm, once you can play it cleanly 3 times in a row. That way speed grows without tension."
+    }
+   ]
+  },
+  {
+   "id": "five-rh",
+   "part": "Finger dexterity",
+   "title": "Five-finger pattern: right hand",
+   "summary": "The basic up-and-down pattern that trains every finger equally.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Five fingers, five notes",
+     "body": "This is the most important warm-up there is. Each finger plays one key, up and back down: **1 2 3 4 5 4 3 2 1**.\n\nListen while you play: all notes should sound **equally loud**. Fingers 4 and 5 will want to play softer; give them a little more weight."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand, C position: up and back down.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "D4",
+      "E4",
+      "F4",
+      "G4",
+      "F4",
+      "E4",
+      "D4",
+      "C4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Goal: 100 bpm with 2 notes per click.",
+     "explain": "That's the five-finger pattern. Every finger did the same amount of work."
+    },
+    {
+     "type": "text",
+     "title": "Same shape, new place",
+     "body": "The pattern works from any note. Move your thumb to **G**: now you play G A B C D.\n\nThen move it to **D**. Here finger 3 lands on a black key, **F♯**. Black keys sit further back, so move your hand slightly into the keys."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand, G position.",
+     "hand": "rh",
+     "notes": [
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "C5",
+      "B4",
+      "A4",
+      "G4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily. Same tempo as C position.",
+     "explain": "Same fingers, new notes. That's what makes the pattern so useful."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand, D position (F♯ with finger 3).",
+     "hand": "rh",
+     "notes": [
+      "D4",
+      "E4",
+      "F#4",
+      "G4",
+      "A4",
+      "G4",
+      "F#4",
+      "E4",
+      "D4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily. Keep the black key as even as the white keys.",
+     "explain": "Black keys are no harder once your hand is in the right place."
+    }
+   ]
+  },
+  {
+   "id": "five-lh",
+   "part": "Finger dexterity",
+   "title": "Five-finger pattern: left hand",
+   "summary": "The same pattern for your left hand, which usually needs it most.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "The left hand works backwards",
+     "body": "In the left hand finger 5 is on the lowest note. Going up, you play **5 4 3 2 1**, then back down **1 2 3 4 5**.\n\nMost people are weaker in the left hand, so this lesson is worth repeating more often. Give it **2 extra rounds** every day."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand, C position: finger 5 on the C below middle C.",
+     "hand": "lh",
+     "notes": [
+      "C3",
+      "D3",
+      "E3",
+      "F3",
+      "G3",
+      "F3",
+      "E3",
+      "D3",
+      "C3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 7 rounds (5 + 2 extra for the weaker hand) at 60 bpm.",
+     "explain": "Your left hand now knows the pattern too."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand, G position: finger 5 on G below middle C.",
+     "hand": "lh",
+     "notes": [
+      "G3",
+      "A3",
+      "B3",
+      "C4",
+      "D4",
+      "C4",
+      "B3",
+      "A3",
+      "G3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily.",
+     "explain": "Good. Same pattern, new place, left hand."
+    },
+    {
+     "type": "quiz",
+     "question": "Left hand in C position: which finger plays G?",
+     "options": [
+      "Finger 5",
+      "Finger 3",
+      "Finger 1 (thumb)",
+      "Finger 2"
+     ],
+     "answer": 2,
+     "explain": "Left hand C position: 5 on C, 4 on D, 3 on E, 2 on F, 1 on G."
+    }
+   ]
+  },
+  {
+   "id": "thirds",
+   "part": "Finger dexterity",
+   "title": "Broken thirds: finger independence",
+   "summary": "Skip a note, step back, skip again. Fingers learn to move on their own.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Skip and step",
+     "body": "Now the fingers no longer move in order. You skip a key, step back, skip again: **C E, D F, E G**, and back down.\n\nThis trains **finger independence**: each finger has to move on its own while the others stay relaxed on their keys. Keep all five fingers resting on their keys the whole time."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand, C position: broken thirds up and down.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "E4",
+      "D4",
+      "F4",
+      "E4",
+      "G4",
+      "E4",
+      "F4",
+      "D4",
+      "E4",
+      "C4"
+     ],
+     "fingers": [
+      1,
+      3,
+      2,
+      4,
+      3,
+      5,
+      3,
+      4,
+      2,
+      3,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds at 60 bpm. Goal: 90 bpm, 2 notes per click.",
+     "explain": "Nice. Fingers 3, 4 and 5 had to work out of order there."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand, C position: broken thirds.",
+     "hand": "lh",
+     "notes": [
+      "C3",
+      "E3",
+      "D3",
+      "F3",
+      "E3",
+      "G3",
+      "E3",
+      "F3",
+      "D3",
+      "E3",
+      "C3"
+     ],
+     "fingers": [
+      5,
+      3,
+      4,
+      2,
+      3,
+      1,
+      3,
+      2,
+      4,
+      3,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily for the left hand.",
+     "explain": "Your left hand just did finger independence work. It gets easier quickly."
+    }
+   ]
+  },
+  {
+   "id": "weak-fingers",
+   "part": "Finger dexterity",
+   "title": "Waking up fingers 4 and 5",
+   "summary": "Short trills for the two fingers that need the most help.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why 4 and 5 feel weak",
+     "body": "Fingers 4 and 5 share tendons with their neighbours, so they don't move as freely. They are not really weak; they just need practice to move on their own.\n\nA **trill** is two notes alternating. Play it slowly, lift each finger a little, and keep the other fingers relaxed on their keys."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand, C position: trill F and G with fingers 4 and 5.",
+     "hand": "rh",
+     "notes": [
+      "F4",
+      "G4",
+      "F4",
+      "G4",
+      "F4",
+      "G4",
+      "F4",
+      "G4",
+      "F4"
+     ],
+     "fingers": [
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds, slowly. Speed is not the goal here; clean, even notes are.",
+     "explain": "Fingers 4 and 5 working together. That's the hardest pair, well done."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: trill E and F with fingers 3 and 4.",
+     "hand": "rh",
+     "notes": [
+      "E4",
+      "F4",
+      "E4",
+      "F4",
+      "E4",
+      "F4",
+      "E4",
+      "F4",
+      "E4"
+     ],
+     "fingers": [
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily.",
+     "explain": "Good. 3 and 4 are linked too, so this one helps a lot."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand, C position: trill C and D with fingers 5 and 4.",
+     "hand": "lh",
+     "notes": [
+      "C3",
+      "D3",
+      "C3",
+      "D3",
+      "C3",
+      "D3",
+      "C3",
+      "D3",
+      "C3"
+     ],
+     "fingers": [
+      5,
+      4,
+      5,
+      4,
+      5,
+      4,
+      5,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily.",
+     "explain": "Left hand 4 and 5 are often the weakest fingers of all. This exercise is worth doing every day."
+    }
+   ]
+  },
+  {
+   "id": "hanon",
+   "part": "Finger dexterity",
+   "title": "The climbing pattern (Hanon No. 1)",
+   "summary": "A classic 19th-century exercise that moves your hand up the keyboard.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "A classic exercise",
+     "body": "Charles-Louis Hanon wrote his finger exercises in 1873, and pianists still use them. In the first one, an 8-note pattern climbs up one key at a time.\n\nThe pattern is **1 2 3 4 5 4 3 2** in the right hand. Each group starts one key higher. Your hand shifts a little every time, so you also practise moving smoothly along the keyboard."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: three groups climbing from C, end on F with the thumb.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "E4",
+      "F4",
+      "G4",
+      "A4",
+      "G4",
+      "F4",
+      "E4",
+      "D4",
+      "F4",
+      "G4",
+      "A4",
+      "B4",
+      "A4",
+      "G4",
+      "F4",
+      "E4",
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "B4",
+      "A4",
+      "G4",
+      "F4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds at 60 bpm. Goal: 108 bpm with 4 notes per click (that's the speed Hanon suggests).",
+     "explain": "That's Hanon No. 1. In the full version it climbs two octaves and comes back down."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: the same pattern an octave lower, fingers 5 4 3 2 1 2 3 4.",
+     "hand": "lh",
+     "notes": [
+      "C3",
+      "E3",
+      "F3",
+      "G3",
+      "A3",
+      "G3",
+      "F3",
+      "E3",
+      "D3",
+      "F3",
+      "G3",
+      "A3",
+      "B3",
+      "A3",
+      "G3",
+      "F3",
+      "E3",
+      "G3",
+      "A3",
+      "B3",
+      "C4",
+      "B3",
+      "A3",
+      "G3",
+      "F3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily.",
+     "explain": "Good. Later you can play both hands together, an octave apart."
+    }
+   ]
+  },
+  {
+   "id": "together",
+   "part": "Finger dexterity",
+   "title": "Hands together: parallel and mirror",
+   "summary": "Coordinate both hands, first moving the same way, then in opposite directions.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Two hands, one brain",
+     "body": "Playing with both hands is a skill of its own. In **parallel motion** both hands play the same notes, an octave apart. That sounds simple, but the fingers are different: when the right hand plays with finger 1, the left hand uses finger 5.\n\nThe app hears this as one note at a time. Under each note you see **R** for the right-hand finger and **L** for the left."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands, C position, an octave apart: up and back down.",
+     "hand": "both",
+     "notes": [
+      [
+       "C4",
+       "C3"
+      ],
+      [
+       "D4",
+       "D3"
+      ],
+      [
+       "E4",
+       "E3"
+      ],
+      [
+       "F4",
+       "F3"
+      ],
+      [
+       "G4",
+       "G3"
+      ],
+      [
+       "F4",
+       "F3"
+      ],
+      [
+       "E4",
+       "E3"
+      ],
+      [
+       "D4",
+       "D3"
+      ],
+      [
+       "C4",
+       "C3"
+      ]
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds at 60 bpm. Both hands must strike at exactly the same moment.",
+     "explain": "Both hands together. Listen for one combined sound, not two hands slightly apart."
+    },
+    {
+     "type": "text",
+     "title": "Mirror motion",
+     "body": "In **contrary motion** the hands move away from each other like a mirror. Right thumb on the C above middle C, left thumb on middle C. The right hand goes up, the left goes down, and **both hands use the same finger numbers**.\n\nMost people find this easier than parallel motion, because your brain likes symmetry. Here the app listens for two different notes at once, so play both clearly. If it keeps missing notes, set listening to Forgiving on the course page."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands, mirror: thumbs on C, fingers 1 2 3 4 5 4 3 2 1 in both hands.",
+     "hand": "both",
+     "notes": [
+      [
+       "C5",
+       "C4"
+      ],
+      [
+       "D5",
+       "B3"
+      ],
+      [
+       "E5",
+       "A3"
+      ],
+      [
+       "F5",
+       "G3"
+      ],
+      [
+       "G5",
+       "F3"
+      ],
+      [
+       "F5",
+       "G3"
+      ],
+      [
+       "E5",
+       "A3"
+      ],
+      [
+       "D5",
+       "B3"
+      ],
+      [
+       "C5",
+       "C4"
+      ]
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily.",
+     "explain": "That's contrary motion. Your hands are learning to work independently of each other."
+    }
+   ]
+  },
+  {
+   "id": "scale-steps",
+   "part": "Scales",
+   "title": "How a major scale is built",
+   "summary": "Whole steps and half steps: the recipe behind every major key.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Whole and half steps",
+     "body": "A **half step** is the distance to the very next key, black or white. E to F is a half step, and so is C to C♯.\n\nA **whole step** is two half steps, with one key in between. C to D is a whole step (C♯ is in between)."
+    },
+    {
+     "type": "text",
+     "title": "The major scale recipe",
+     "body": "Every major scale follows the same pattern of steps:\n\n**whole, whole, half, whole, whole, whole, half**\n\nC major uses only white keys because the two half steps (E–F and B–C) happen to fall exactly where the white keys have no black key between them. Start on any other note and you need black keys to keep the same pattern. That's why keys have sharps or flats."
+    },
+    {
+     "type": "quiz",
+     "question": "Which pattern of steps makes a major scale?",
+     "options": [
+      "W W H W W W H",
+      "W H W W H W W",
+      "H W W W H W W",
+      "W W W H W W H"
+     ],
+     "answer": 0,
+     "explain": "Whole, whole, half, whole, whole, whole, half. You'll find it in every major scale."
+    },
+    {
+     "type": "text",
+     "title": "Try it from G",
+     "body": "Start on G and follow the recipe: G, A (whole), B (whole), C (half), D (whole), E (whole), then a **whole** step from E. That's not F but **F♯**. Then a half step back to G.\n\nSo G major has one black key: **F♯**."
+    },
+    {
+     "type": "play-note",
+     "prompt": "Play the one black key in the G major scale.",
+     "note": "F#4",
+     "explain": "F♯. That's why the key of G major has one sharp."
+    },
+    {
+     "type": "quiz",
+     "question": "D major starts on D. Following the recipe, which notes are sharp?",
+     "options": [
+      "Only F♯",
+      "F♯ and C♯",
+      "C♯ and G♯",
+      "None"
+     ],
+     "answer": 1,
+     "explain": "D E F♯ G A B C♯ D. Two sharps: F♯ and C♯."
+    }
+   ]
+  },
+  {
+   "id": "c-scale-rh",
+   "part": "Scales",
+   "title": "C major scale: right hand",
+   "summary": "Eight notes with only five fingers: the thumb goes under.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Thumb under",
+     "body": "A scale has 8 notes but you only have 5 fingers. The trick: after playing E with finger 3, **tuck your thumb under** your hand to play F. Then fingers 2, 3, 4 and 5 continue on G, A, B and C.\n\nRight-hand fingering: **1 2 3, 1 2 3 4 5**. On the way down: **5 4 3 2 1**, then finger **3 crosses over** the thumb onto E, then **2 1**.\n\nMove the thumb under early, while finger 2 and 3 are playing, so the hand doesn't jump."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: C major scale, one octave up and down.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "D4",
+      "E4",
+      "F4",
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "B4",
+      "A4",
+      "G4",
+      "F4",
+      "E4",
+      "D4",
+      "C4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "Smooth thumb-under is the key to every scale. Listen for a bump at E to F; it should disappear with practice."
+    }
+   ]
+  },
+  {
+   "id": "c-scale-lh",
+   "part": "Scales",
+   "title": "C major scale: left hand",
+   "summary": "In the left hand, finger 3 crosses over the thumb.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Finger 3 over",
+     "body": "Left-hand fingering going up: **5 4 3 2 1**, then **finger 3 crosses over** the thumb onto A, then **2 1** on B and C.\n\nGoing down it's the other way: **1 2 3**, then the **thumb goes under** to G, then **1 2 3 4 5**.\n\nThe tricky spot is the crossing at G to A. Practise just those notes a few times if it feels bumpy."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: C major scale, one octave up and down.",
+     "hand": "lh",
+     "notes": [
+      "C3",
+      "D3",
+      "E3",
+      "F3",
+      "G3",
+      "A3",
+      "B3",
+      "C4",
+      "B3",
+      "A3",
+      "G3",
+      "F3",
+      "E3",
+      "D3",
+      "C3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 7 rounds at 60 bpm (2 extra for the weaker hand). Goal: 2 notes per click at 80 bpm.",
+     "explain": "That's the left-hand scale. It's the mirror image of the right hand."
+    }
+   ]
+  },
+  {
+   "id": "c-scale-ht",
+   "part": "Scales",
+   "title": "C major scale: hands together",
+   "summary": "Both hands an octave apart, with the crossings in different places.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "The crossings don't line up",
+     "body": "With both hands together, the thumbs cross at different moments: the right thumb goes under at F, the left hand's finger 3 crosses over at A.\n\nStart **very slowly**, slower than hands separately. Only when each hand plays the scale cleanly on its own is it time for this step. Under each note you see the finger for the right (R) and the left (L) hand."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands, an octave apart: C major scale up and down.",
+     "hand": "both",
+     "notes": [
+      [
+       "C4",
+       "C3"
+      ],
+      [
+       "D4",
+       "D3"
+      ],
+      [
+       "E4",
+       "E3"
+      ],
+      [
+       "F4",
+       "F3"
+      ],
+      [
+       "G4",
+       "G3"
+      ],
+      [
+       "A4",
+       "A3"
+      ],
+      [
+       "B4",
+       "B3"
+      ],
+      [
+       "C5",
+       "C4"
+      ],
+      [
+       "B4",
+       "B3"
+      ],
+      [
+       "A4",
+       "A3"
+      ],
+      [
+       "G4",
+       "G3"
+      ],
+      [
+       "F4",
+       "F3"
+      ],
+      [
+       "E4",
+       "E3"
+      ],
+      [
+       "D4",
+       "D3"
+      ],
+      [
+       "C4",
+       "C3"
+      ]
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds at 50 bpm, one note per click, after warming up each hand separately.",
+     "explain": "Hands together scales are a real milestone. Keep going daily and they become automatic."
+    }
+   ]
+  },
+  {
+   "id": "g-d-f",
+   "part": "Scales",
+   "title": "G, D and F major: new keys, same shapes",
+   "summary": "Learn the scales of the keys songs use most, with their sharps and flats.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Same fingering, new keys",
+     "body": "**G major** (one sharp: F♯) and **D major** (two sharps: F♯ and C♯) use exactly the same fingering as C major: right hand **1 2 3, 1 2 3 4 5**, left hand **5 4 3 2 1, 3 2 1**.\n\nThe only new thing is the black keys. Keep the hand a little further into the keys so the black keys are easy to reach."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: G major scale (F♯).",
+     "hand": "rh",
+     "notes": [
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "E5",
+      "F#5",
+      "G5",
+      "F#5",
+      "E5",
+      "D5",
+      "C5",
+      "B4",
+      "A4",
+      "G4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "G major. Lots of pop, folk and guitar songs are in G."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: G major scale.",
+     "hand": "lh",
+     "notes": [
+      "G3",
+      "A3",
+      "B3",
+      "C4",
+      "D4",
+      "E4",
+      "F#4",
+      "G4",
+      "F#4",
+      "E4",
+      "D4",
+      "C4",
+      "B3",
+      "A3",
+      "G3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily for the left hand.",
+     "explain": "Good. Same shape as C, one black key."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: D major scale (F♯ and C♯).",
+     "hand": "rh",
+     "notes": [
+      "D4",
+      "E4",
+      "F#4",
+      "G4",
+      "A4",
+      "B4",
+      "C#5",
+      "D5",
+      "C#5",
+      "B4",
+      "A4",
+      "G4",
+      "F#4",
+      "E4",
+      "D4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "D major. Same fingering, two sharps."
+    },
+    {
+     "type": "text",
+     "title": "F major is different",
+     "body": "**F major** has one flat: **B♭**. In the right hand the usual fingering would put the thumb on B♭, a black key, which is awkward. So here the right hand plays **1 2 3 4, 1 2 3 4**: thumb on F, finger 4 on B♭, then the thumb goes under to C.\n\nThe left hand uses the normal fingering: 5 4 3 2 1, 3 2 1."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: F major scale (B♭ with finger 4).",
+     "hand": "rh",
+     "notes": [
+      "F4",
+      "G4",
+      "A4",
+      "Bb4",
+      "C5",
+      "D5",
+      "E5",
+      "F5",
+      "E5",
+      "D5",
+      "C5",
+      "Bb4",
+      "A4",
+      "G4",
+      "F4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      1,
+      2,
+      3,
+      4,
+      3,
+      2,
+      1,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "F major. The thumb never touches a black key, which is the rule behind most scale fingerings."
+    },
+    {
+     "type": "quiz",
+     "question": "Which major key has one flat, B♭?",
+     "options": [
+      "G major",
+      "D major",
+      "F major",
+      "C major"
+     ],
+     "answer": 2,
+     "explain": "F major has B♭. G major has one sharp (F♯), D major has two (F♯, C♯)."
+    }
+   ]
+  },
+  {
+   "id": "minor",
+   "part": "Scales",
+   "title": "Minor scales: same notes, different home",
+   "summary": "Every major key has a minor partner that shares its notes.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "The relative minor",
+     "body": "Play the C major notes, but start and end on **A**: A B C D E F G A. That's the **A minor** scale. Same notes as C major, but the home note is A, and suddenly it sounds sad or serious.\n\nA minor is the **relative minor** of C major. You find it on **scale degree 6** of any major key: G major → E minor, F major → D minor. In the chord course you met this as the vi chord."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: A natural minor scale.",
+     "hand": "rh",
+     "notes": [
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "E5",
+      "F5",
+      "G5",
+      "A5",
+      "G5",
+      "F5",
+      "E5",
+      "D5",
+      "C5",
+      "B4",
+      "A4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "A natural minor: all white keys, same fingering as C major."
+    },
+    {
+     "type": "listen",
+     "question": "Which one is minor?",
+     "melodyOptions": [
+      [
+       "C4",
+       "D4",
+       "E4",
+       "F4",
+       "G4",
+       "E4",
+       "C4"
+      ],
+      [
+       "C4",
+       "D4",
+       "Eb4",
+       "F4",
+       "G4",
+       "Eb4",
+       "C4"
+      ]
+     ],
+     "options": [
+      "Melody 1",
+      "Melody 2"
+     ],
+     "answer": 1,
+     "explain": "Melody 2 uses E♭, the minor third. The third note of the scale decides whether it sounds major or minor."
+    },
+    {
+     "type": "text",
+     "title": "Harmonic minor",
+     "body": "Many songs raise the 7th note of the minor scale by a half step. In A minor that turns G into **G♯**. This is called **harmonic minor**. It gives the strong pull back home you hear in classical music, flamenco and a lot of film music.\n\nThat G♯ is also why the V chord in a minor key is often major (E instead of Em)."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: A harmonic minor (G♯).",
+     "hand": "rh",
+     "notes": [
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "E5",
+      "F5",
+      "G#5",
+      "A5",
+      "G#5",
+      "F5",
+      "E5",
+      "D5",
+      "C5",
+      "B4",
+      "A4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily. Listen to the step from F to G♯: it's bigger than a whole step.",
+     "explain": "That exotic gap between F and G♯ is the sound of harmonic minor."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: A natural minor.",
+     "hand": "lh",
+     "notes": [
+      "A3",
+      "B3",
+      "C4",
+      "D4",
+      "E4",
+      "F4",
+      "G4",
+      "A4",
+      "G4",
+      "F4",
+      "E4",
+      "D4",
+      "C4",
+      "B3",
+      "A3"
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 7 rounds daily.",
+     "explain": "Good. Same fingering as C major in the left hand."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: E minor (F♯), the relative minor of G major.",
+     "hand": "rh",
+     "notes": [
+      "E4",
+      "F#4",
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "E5",
+      "D5",
+      "C5",
+      "B4",
+      "A4",
+      "G4",
+      "F#4",
+      "E4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Daily: 5 rounds per hand at 60 bpm, one note per click. Raise by 4 to 6 bpm after 3 clean rounds. Goal: 2 notes per click at 80 bpm.",
+     "explain": "E minor shares its notes with G major."
+    },
+    {
+     "type": "quiz",
+     "question": "What is the relative minor of F major?",
+     "options": [
+      "A minor",
+      "E minor",
+      "D minor",
+      "G minor"
+     ],
+     "answer": 2,
+     "explain": "Count to degree 6 of F major: F G A B♭ C D. D minor shares F major's notes, including B♭."
+    }
+   ]
+  },
+  {
+   "id": "scale-chords",
+   "part": "Scales for playing by ear",
+   "title": "Every scale gives you seven chords",
+   "summary": "Build a chord on each note of the scale, and you know which chords a song is likely to use.",
+   "key": "G",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Chords come from the scale",
+     "body": "Take the G major scale and build a triad on each note, using only notes from the scale (skip a note, play a note). You get:\n\n**G, Am, Bm, C, D, Em, F♯dim**\n\nThat's I ii iii IV V vi vii° in G. Every major key has this same pattern: **major, minor, minor, major, major, minor, diminished**.\n\nThis is the link between scales and chords: once you know the key of a song, you know its likely chords.",
+     "examples": [
+      {
+       "label": "G major chords",
+       "chords": [
+        "I",
+        "ii",
+        "iii",
+        "IV",
+        "V",
+        "vi"
+       ],
+       "key": "G"
+      }
+     ]
+    },
+    {
+     "type": "play-chord",
+     "prompt": "Play the vi chord in G major.",
+     "roman": "vi",
+     "key": "G",
+     "explain": "Em is the vi chord in G. Notice: all its notes, E G B, are in the G major scale."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play I–V–vi–IV in G, the four-chord song progression.",
+     "progression": [
+      "I",
+      "V",
+      "vi",
+      "IV"
+     ],
+     "key": "G",
+     "explain": "G–D–Em–C. Hundreds of songs use exactly these chords in G."
+    },
+    {
+     "type": "quiz",
+     "question": "A song is in D major. Which of these chords is NOT in the key?",
+     "options": [
+      "G",
+      "A",
+      "Bm",
+      "F"
+     ],
+     "answer": 3,
+     "explain": "D major has F♯, not F. The chords in D are D, Em, F♯m, G, A, Bm (and C♯dim). F doesn't fit."
+    }
+   ]
+  },
+  {
+   "id": "home-note",
+   "part": "Scales for playing by ear",
+   "title": "Hearing the home note",
+   "summary": "The first step to playing a song by ear: find where it feels at rest.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Every song has a home",
+     "body": "Almost every song has one note that feels like **home**: the place where the melody can stop and feel finished. That note is the **tonic**, and it gives the song its key.\n\nTo play a song by ear:\n\n**1. Find the home note.** Hum the end of the song or a chorus, then find that note on the piano.\n**2. Try the major scale from that note.** If the melody fits, the song is in that major key.\n**3. If the third note sounds wrong,** try the minor scale instead.\n**4. Use the chords of that key,** starting with I, IV, V and vi."
+    },
+    {
+     "type": "listen",
+     "question": "Which melody sounds finished?",
+     "melodyOptions": [
+      [
+       "E4",
+       "D4",
+       "C4",
+       "D4",
+       "E4",
+       "G4",
+       "F4",
+       "D4",
+       "C4"
+      ],
+      [
+       "E4",
+       "D4",
+       "C4",
+       "D4",
+       "E4",
+       "G4",
+       "F4",
+       "E4",
+       "D4"
+      ]
+     ],
+     "options": [
+      "Melody 1",
+      "Melody 2"
+     ],
+     "answer": 0,
+     "explain": "Melody 1 ends on C, the home note of C major. Melody 2 stops on D and leaves you hanging."
+    },
+    {
+     "type": "listen",
+     "question": "And here, which one ends at home?",
+     "melodyOptions": [
+      [
+       "G4",
+       "B4",
+       "D5",
+       "C5",
+       "B4",
+       "A4",
+       "B4",
+       "A4"
+      ],
+      [
+       "G4",
+       "B4",
+       "D5",
+       "C5",
+       "B4",
+       "A4",
+       "F#4",
+       "G4"
+      ]
+     ],
+     "options": [
+      "Melody 1",
+      "Melody 2"
+     ],
+     "answer": 1,
+     "explain": "Melody 2 ends on G, the home of G major. The F♯ right before it pulls strongly up to G."
+    },
+    {
+     "type": "quiz",
+     "question": "A song ends on G and the G major scale fits its melody. Which chords should you try first?",
+     "options": [
+      "G, C, D and Em",
+      "C, F, G and Am",
+      "D, G, A and Bm",
+      "Gm, Cm and D"
+     ],
+     "answer": 0,
+     "explain": "In G major: I = G, IV = C, V = D, vi = Em. Those four cover a huge number of songs."
+    },
+    {
+     "type": "quiz",
+     "question": "The melody's home is A, and the A major scale sounds wrong at the third note. What do you try?",
+     "options": [
+      "A minor",
+      "C major",
+      "E major",
+      "A major again, faster"
+     ],
+     "answer": 0,
+     "explain": "A wrong-sounding third is the sign of minor. Try A minor: same notes as C major, with A as home."
+    }
+   ]
+  },
+  {
+   "id": "pentatonic",
+   "part": "Scales for playing by ear",
+   "title": "The pentatonic scale: the safe notes",
+   "summary": "Five notes that fit almost any melody in the key.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Leave out the tricky notes",
+     "body": "The **major pentatonic** scale is the major scale without notes 4 and 7: **1 2 3 5 6**. In C: **C D E G A**.\n\nNotes 4 and 7 are the ones that clash most easily with chords. Without them, every note sounds good over the I, IV, V and vi chords. That's why so many melodies, from folk songs to pop hooks, are built mostly from these five notes. When you're looking for a melody by ear, try these notes first."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: C major pentatonic up and down.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "D4",
+      "E4",
+      "G4",
+      "A4",
+      "C5",
+      "A4",
+      "G4",
+      "E4",
+      "D4",
+      "C4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily. Then improvise: play any of these notes over a C chord in your left hand. Nothing will sound wrong.",
+     "explain": "C D E G A. Five notes, no wrong notes."
+    },
+    {
+     "type": "text",
+     "title": "Minor pentatonic",
+     "body": "Start the same five notes on A: **A C D E G**. That's the **A minor pentatonic** scale, the relative minor again. It's the basis of blues and rock melodies.\n\nSo C major pentatonic and A minor pentatonic share their notes, just like C major and A minor do."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: A minor pentatonic up and down.",
+     "hand": "rh",
+     "notes": [
+      "A3",
+      "C4",
+      "D4",
+      "E4",
+      "G4",
+      "A4",
+      "G4",
+      "E4",
+      "D4",
+      "C4",
+      "A3"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 rounds daily.",
+     "explain": "A C D E G. Play it slowly over an Am chord and you hear the blues."
+    },
+    {
+     "type": "quiz",
+     "question": "Which notes make the G major pentatonic scale?",
+     "options": [
+      "G A B D E",
+      "G A B C D",
+      "G B D F♯ A",
+      "G A C D E"
+     ],
+     "answer": 0,
+     "explain": "Degrees 1 2 3 5 6 of G major: G A B D E. No C (4) and no F♯ (7)."
+    }
+   ]
+  },
+  {
+   "id": "play-back",
+   "part": "Scales for playing by ear",
+   "title": "Play it back by ear",
+   "summary": "Hear a short melody, then find it on the keys. The app tells you higher or lower.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Your ear is the teacher now",
+     "body": "In these exercises the notes are hidden. Tap **Hear it**, listen, then play the melody back. The app tells you if a note should be **higher or lower**, and shows each note once you've found it.\n\nTips:\n\n**Listen for direction first:** does the melody go up or down, by a small step or a jump?\n**Sing or hum it.** If you can sing it, you can find it.\n**Most of these use the C pentatonic notes** (C D E G A), which you just learned."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Melody 1. It starts on C.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "D4",
+      "E4",
+      "D4",
+      "C4"
+     ],
+     "reps": 1,
+     "practice": "Listen with Hear it as often as you like. Then play it back. Daily: pick a short tune you know and find it the same way.",
+     "explain": "Up by steps, then back down. That shape is everywhere in songs.",
+     "hidden": true,
+     "hearSpeed": 0.6
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Melody 2. It starts on E.",
+     "hand": "rh",
+     "notes": [
+      "E4",
+      "D4",
+      "C4",
+      "E4",
+      "G4"
+     ],
+     "reps": 1,
+     "practice": "Listen with Hear it as often as you like. Then play it back. Daily: pick a short tune you know and find it the same way.",
+     "explain": "Down by steps, then up by jumps along the C chord (C E G).",
+     "hidden": true,
+     "hearSpeed": 0.6
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Melody 3. It starts on G.",
+     "hand": "rh",
+     "notes": [
+      "G4",
+      "E4",
+      "C4",
+      "D4",
+      "E4",
+      "C4"
+     ],
+     "reps": 1,
+     "explain": "Did you notice it ended on C, the home note? It sounds finished.",
+     "hidden": true,
+     "hearSpeed": 0.6
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Melody 4. It starts on C and climbs.",
+     "hand": "rh",
+     "notes": [
+      "C4",
+      "E4",
+      "G4",
+      "A4",
+      "G4",
+      "E4",
+      "D4",
+      "C4"
+     ],
+     "reps": 1,
+     "explain": "All pentatonic notes: C E G A G E D C.",
+     "hidden": true,
+     "hearSpeed": 0.6
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Melody 5, in G major. It starts on G.",
+     "hand": "rh",
+     "notes": [
+      "G4",
+      "A4",
+      "B4",
+      "D5",
+      "B4",
+      "A4",
+      "G4"
+     ],
+     "reps": 1,
+     "explain": "That's the G major pentatonic. You found a melody in a new key by ear.",
+     "hidden": true,
+     "hearSpeed": 0.6
+    }
+   ]
+  },
+  {
+   "id": "routine",
+   "part": "Scales for playing by ear",
+   "title": "Your daily 15-minute routine",
+   "summary": "A practice plan that combines everything, plus how to move on week by week.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "15 minutes a day",
+     "body": "**1. Warm-up, 2 minutes.** Five-finger pattern, each hand, 3 rounds. Relax the hands.\n**2. Dexterity, 4 minutes.** Broken thirds and the 4–5 trills, 5 rounds per hand. Then Hanon No. 1, 3 rounds per hand.\n**3. Scale of the week, 5 minutes.** Hands separately, 5 rounds each (left hand 2 extra). Then hands together, 3 slow rounds. Then its relative minor.\n**4. Ear, 4 minutes.** Pick a song you know. Find its home note, choose the scale, and find the first line of the melody. Then try the chords I, IV, V and vi underneath."
+    },
+    {
+     "type": "text",
+     "title": "Week by week",
+     "body": "**Week 1:** C major and A minor.\n**Week 2:** G major and E minor.\n**Week 3:** F major and D minor.\n**Week 4:** D major and B minor.\n\nEach week, write down the metronome tempo where you could play 3 clean rounds. When a scale feels easy at 2 notes per click at 80 bpm, it's ready. Keep the older scales in rotation once a week so they stay fresh."
+    },
+    {
+     "type": "quiz",
+     "question": "Which part of practice helps most with playing songs by ear?",
+     "options": [
+      "Playing scales as fast as possible",
+      "Finding the home note and melody of songs you know",
+      "Only practising the right hand",
+      "Practising once a week for an hour"
+     ],
+     "answer": 1,
+     "explain": "Scales give your fingers the map; finding real songs by ear trains your ear to use it. Do a little of both every day."
+    }
+   ]
+  }
+ ]
+}

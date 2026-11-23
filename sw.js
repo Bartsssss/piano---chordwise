@@ -1,8 +1,9 @@
 // Offline cache for the app shell. Bump VERSION when files change.
-const VERSION = 'chordwise-v2';
+const VERSION = 'chordwise-v4';
 const FILES = ['./', 'index.html', 'styles.css', 'theory.js', 'detect.js', 'audio.js', 'app.js', 'gate.js',
   'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
-  'courses/index.json', 'courses/chord-progressions.json'];
+  'courses/index.json', 'courses/chord-progressions.json',
+  'courses/playing-exercises.json', 'courses/beatles-songs.json'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });

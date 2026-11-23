@@ -5,6 +5,8 @@
   const $app = document.getElementById('app');
   const PC_NAMES = ['C', 'C♯', 'D', 'E♭', 'E', 'F', 'F♯', 'G', 'A♭', 'A', 'B♭', 'B'];
   const HOLD_MS = 220;
+  const NOTE_HOLD_MS = 100; // single notes in exercises: shorter, so steady playing is not slowed down
+  const HAND_LABEL = { rh: 'Right hand', lh: 'Left hand', both: 'Both hands' };
 
   // ---------- storage (best effort) ----------
   const store = {
@@ -86,8 +88,8 @@
   function renderHome() {
     $app.innerHTML =
       '<header class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Chordwise</span></header>' +
-      '<section class="hero"><h1>Hear why chords move the way they do.</h1>' +
-      '<p>Short lessons on chord progressions. Read a little, hear it, then play it on your piano while the app listens through your microphone.</p>' +
+      '<section class="hero"><h1>Play it, and the app listens.</h1>' +
+      '<p>Short lessons on chords, scales and finger exercises. Read a little, hear it, then play it on your piano while the app listens through your microphone.</p>' +
       '<div class="fn-legend"><span class="fn-tag tonic">Tonic · home</span><span class="fn-tag predominant">Subdominant · away</span><span class="fn-tag dominant">Dominant · tension</span></div></section>' +
       '<div class="stack">' + S.courses.map((c, i) => {
         const done = doneCount(c), total = c.lessons.length;
@@ -216,7 +218,21 @@
     bindStep(s);
   }
 
-  const isPractice = s => s.type === 'play-note' || s.type === 'play-chord' || s.type === 'play-progression';
+  const isPractice = s => s.type === 'play-note' || s.type === 'play-chord' || s.type === 'play-progression' || s.type === 'play-notes';
+
+  // melodies (play-notes steps, listen steps with "melody"): one note after another
+  function playMelody(names, onEach, dur) {
+    dur = dur || 0.55;
+    const seq = names.map(n => ({ notes: [].concat(n).map(x => T.parseNoteName(x).midi), dur }));
+    A.Synth.playSequence(seq);
+    if (onEach) { names.forEach((_, i) => setTimeout(() => onEach(i), i * dur * 1000)); setTimeout(() => onEach(-1), names.length * dur * 1000); }
+  }
+  // For play-it-back exercises: say which way to move instead of naming the note.
+  function direction(heardPc, t) {
+    const d = ((t.pc - heardPc) % 12 + 18) % 12 - 6;
+    return d > 0 ? 'Try a little higher.' : d < 0 ? 'Try a little lower.' : 'Try the same note an octave away.';
+  }
+  const tLabel = t => t.kind === 'chord' ? t.chord.symbol : t.names.map(pretty).join(' + ');
 
   // ---------- steps ----------
   function renderExamples(examples, key) {
@@ -237,7 +253,8 @@
     if (s.type === 'quiz' || s.type === 'listen') {
       let listenHtml = '';
       if (s.type === 'listen') {
-        if (s.playOptions) listenHtml = '<div class="row">' + s.playOptions.map((_, i) => '<button class="btn" data-play-opt="' + i + '">' + ICON.play + ' Play ' + (i + 1) + '</button>').join('') + '</div>';
+        if (s.melodyOptions) listenHtml = '<div class="row">' + s.melodyOptions.map((_, i) => '<button class="btn" data-play-mel="' + i + '">' + ICON.play + ' Play ' + (i + 1) + '</button>').join('') + '</div>';
+        else if (s.playOptions) listenHtml = '<div class="row">' + s.playOptions.map((_, i) => '<button class="btn" data-play-opt="' + i + '">' + ICON.play + ' Play ' + (i + 1) + '</button>').join('') + '</div>';
         else listenHtml = '<div class="row"><button class="btn" data-play-listen>' + ICON.play + ' Play</button></div>';
       }
       return '<div class="step-card"><span class="eyebrow">' + (s.type === 'listen' ? 'Ear training' : 'Quick check') + '</span><h2>' + esc(s.question) + '</h2>' + listenHtml +
@@ -255,6 +272,20 @@
       targetHtml = '<div class="target"><span class="target-big">' + esc(c.symbol) + '</span>' + (c.romanDisplay ? '<span class="target-roman">' + esc(c.romanDisplay) + ' in ' + esc(T.parseKey(key).label) + '</span>' : '') + '</div>' +
         '<div class="row">' + (c.function ? '<span class="fn-tag ' + c.function + '">' + esc(fnLabel(c.function)) + '</span><span class="muted" style="font-size:.9rem">' + esc(T.FUNCTIONS[c.function].blurb) + '</span>' : '') + '</div>' +
         '<p class="target-notes">Notes: ' + c.notes.map(n => esc(pretty(n.name))).join(' · ') + (s.checkBass ? ' · lowest note ' + esc(pretty(c.notes.find(n => n.pc === c.bassPc).name)) : '') + '</p>';
+    } else if (s.type === 'play-notes') {
+      const fl = s.fingersLH || [];
+      targetHtml = '<div class="row">' + (s.hand ? '<span class="hand-tag ' + esc(s.hand) + '">' + esc(HAND_LABEL[s.hand] || s.hand) + '</span>' : '') +
+        (P.reps > 1 ? '<span class="muted" data-round>Round ' + Math.min(P.round, P.reps) + ' of ' + P.reps + '</span>' : '') + '</div>' +
+        '<div class="note-strip" data-seq>' + P.seq.map((t, i) => {
+          const f = (s.fingers || [])[i], g = fl[i];
+          const fing = f !== undefined && g !== undefined ? 'R' + f + ' L' + g : f !== undefined ? f : g !== undefined ? 'L' + g : '';
+          return '<span class="note-chip' + (i === 0 ? ' current' : '') + '" data-name="' + esc(t.names.map(pretty).join(' ')) + '">' + (s.hidden ? '<b>?</b>' : t.names.map(n => '<b>' + esc(pretty(n)) + '</b>').join('')) +
+            (fing !== '' ? '<small>' + esc(String(fing)) + '</small>' : '') + '</span>';
+        }).join('') + '</div>' +
+        (s.fingers || s.fingersLH ? '<p class="target-notes">Small numbers are fingers: 1 = thumb, 5 = little finger.</p>' : '') +
+        '<p class="target-notes" data-seq-notes></p>' +
+        (s.practice ? '<div class="practice-goal"><span class="eyebrow">Practice goal</span><p>' + esc(s.practice) + '</p></div>' : '') +
+        '<p class="target-notes" data-times></p>';
     } else {
       targetHtml = '<div class="row"><span class="muted">Key of ' + esc(T.parseKey(key).label) + '</span></div><div class="chips" data-seq>' +
         P.seq.map((t, i) => chordChip(t.chord, i === 0 ? 'current' : '')).join('') + '</div>' +
@@ -283,11 +314,11 @@
         '<div class="row"><button class="btn primary" data-midi-start>Connect MIDI keyboard</button></div>' +
         (S.midiState === 'error' ? '<p class="notice">' + esc(S.midiError) + '</p>' : '<p class="status-line">Plug a USB MIDI keyboard into your phone or computer. Works in Chrome and Edge.</p>');
     } else {
-      html += '<p class="status-line">' + (s.type === 'play-note' ? 'Tap the key.' : 'Tap each note of the chord. Tap again to release it.') + '</p>';
+      html += '<p class="status-line">' + (s.type === 'play-note' ? 'Tap the key.' : s.type === 'play-notes' ? 'Tap the keys in order. Where two notes sound together, tap both.' : 'Tap each note of the chord. Tap again to release it.') + '</p>';
     }
     html += '<div class="keyboard-wrap"><div class="keyboard" data-keyboard></div></div>' +
       '<div class="row" style="justify-content:space-between"><label class="row" style="font-size:.88rem;gap:6px"><input type="checkbox" id="show-keys" ' + (S.showKeys ? 'checked' : '') + '> Show me the keys</label>' +
-      (S.input === 'keys' && s.type !== 'play-note' ? '<button class="btn small ghost" data-clear>Clear</button>' : '') + '</div></div>';
+      (S.input === 'keys' && s.type !== 'play-note' && s.type !== 'play-notes' ? '<button class="btn small ghost" data-clear>Clear</button>' : '') + '</div></div>';
     return html;
   }
 
@@ -301,19 +332,29 @@
     } else if (s.type === 'play-chord') {
       const c = T.resolveChord(s, key);
       seq = [{ kind: 'chord', chord: c, pcs: c.pcs, bassPc: c.bassPc, checkBass: !!s.checkBass }];
+    } else if (s.type === 'play-notes') {
+      seq = s.notes.map(item => {
+        const ns = [].concat(item).map(x => T.parseNoteName(x));
+        const pcs = [...new Set(ns.map(n => n.pc))];
+        // Hands together on the same note name counts as one note; different notes are checked together.
+        if (pcs.length === 1) return { kind: 'note', pc: pcs[0], midi: ns.length === 1 ? ns[0].midi : null, name: ns[0].name, names: [ns[0].name], seqNote: true };
+        return { kind: 'dyad', pcs, names: ns.map(n => n.name), midis: ns.map(n => n.midi), seqNote: true };
+      });
     } else {
       seq = s.progression.map(item => {
         const c = T.resolveChord(item, key);
         return { kind: 'chord', chord: c, pcs: c.pcs, bassPc: c.bassPc, checkBass: !!(item && item.checkBass) };
       });
     }
-    P = { stepRef: s, seq, idx: 0, done: false, armed: false, okSince: null, tryingSince: null, held: new Set(), lastHint: 0 };
+    P = { stepRef: s, seq, idx: 0, done: false, armed: false, okSince: null, tryingSince: null, held: new Set(), lastHint: 0,
+      reps: Math.max(1, s.reps || 1), round: 1, roundStart: null, times: [] };
   }
   const current = () => P && !P.done ? P.seq[P.idx] : null;
 
   function targetMidis(t) {
     if (!t) return [];
     if (t.kind === 'note') return [60 + t.pc];
+    if (t.kind === 'dyad') return t.pcs.map(pc => 60 + pc);
     return T.voicing(t.chord, 60);
   }
 
@@ -344,9 +385,11 @@
     const kb = $app.querySelector('[data-keyboard]');
     if (!kb) return;
     const t = current() || (P && P.done ? P.seq[P.seq.length - 1] : null);
-    const hint = new Set(S.showKeys ? targetMidis(t) : []);
+    const hidden = P && P.stepRef.hidden && !P.done;
+    const hint = new Set(S.showKeys && !hidden ? targetMidis(t) : []);
     const names = {};
     if (t && t.kind === 'chord') t.chord.notes.forEach(n => { names[n.pc] = pretty(n.name); });
+    else if (t && t.kind === 'dyad') t.names.forEach(n => { names[T.parseNoteName(n).pc] = pretty(n); });
     else if (t) names[t.pc] = pretty(t.name);
     const down = downSet || (S.input === 'keys' && P ? P.held : S.input === 'midi' ? A.Midi.held : new Set());
     kb.querySelectorAll('.key').forEach(k => {
@@ -365,11 +408,17 @@
     if (seqEl) {
       [...seqEl.children].forEach((chip, i) => {
         chip.classList.toggle('current', !P.done && i === P.idx);
+        if (P.stepRef.type === 'play-notes') chip.classList.toggle('next', !P.done && i === P.idx + 1);
+        if (P.stepRef.hidden) chip.querySelector('b').textContent = (i < P.idx || P.done) ? chip.dataset.name : '?';
         chip.classList.toggle('passed', i < P.idx || P.done);
       });
       const notesEl = $app.querySelector('[data-seq-notes]');
       const t = current();
-      if (notesEl) notesEl.textContent = t ? 'Now: ' + t.chord.symbol + ' (' + t.chord.notes.map(n => pretty(n.name)).join(' · ') + ')' + (t.checkBass ? ', lowest note ' + pretty(t.chord.notes.find(n => n.pc === t.bassPc).name) : '') + (t.chord.function ? ' · ' + fnLabel(t.chord.function) : '') : '';
+      if (notesEl && P.stepRef.type === 'play-notes') {
+        const f = (P.stepRef.fingers || [])[P.idx], g = (P.stepRef.fingersLH || [])[P.idx];
+        if (P.stepRef.hidden) notesEl.textContent = t ? 'Note ' + (P.idx + 1) + ' of ' + P.seq.length : '';
+        else notesEl.textContent = t ? 'Now: ' + tLabel(t) + (f !== undefined || g !== undefined ? ', finger ' + [f !== undefined ? (g !== undefined ? 'R' : '') + f : '', g !== undefined ? 'L' + g : ''].filter(Boolean).join(' / ') : '') : '';
+      } else if (notesEl) notesEl.textContent = t ? 'Now: ' + t.chord.symbol + ' (' + t.chord.notes.map(n => pretty(n.name)).join(' · ') + ')' + (t.checkBass ? ', lowest note ' + pretty(t.chord.notes.find(n => n.pc === t.bassPc).name) : '') + (t.chord.function ? ' · ' + fnLabel(t.chord.function) : '') : '';
     }
     paintKeyboard();
   }
@@ -383,14 +432,35 @@
 
   function hit() {
     const s = P.stepRef;
+    const prev = P.seq[P.idx];
     P.okSince = null; P.tryingSince = null; P.armed = false;
+    if (P.idx === 0 && s.type === 'play-notes') P.roundStart = performance.now();
+    // In note exercises the next key may be struck while the last one still rings. Only a repeated
+    // note name needs a fresh attack (or a moment of silence) before it counts again.
+    const rearm = nxt => { if (prev.seqNote && nxt && nxt.seqNote) { const a = prev.kind === 'note' ? [prev.pc] : prev.pcs, b = nxt.kind === 'note' ? [nxt.pc] : nxt.pcs; P.armed = !b.some(pc => a.includes(pc)); } };
     if (P.idx < P.seq.length - 1) {
       P.idx++;
-      const praise = ['Yes!', 'Got it.', 'Nice.', 'Good.'][P.idx % 4];
-      setFeedback(praise + ' Now ' + current().chord.symbol + '.', 'good');
+      rearm(current());
+      if (s.type === 'play-notes') setFeedback('', '');
+      else setFeedback(['Yes!', 'Got it.', 'Nice.', 'Good.'][P.idx % 4] + ' Now ' + tLabel(current()) + '.', 'good');
       if (S.input === 'keys') P.held.clear();
       updateSeqUi();
       return;
+    }
+    if (s.type === 'play-notes') {
+      const secs = P.roundStart ? (performance.now() - P.roundStart) / 1000 : 0;
+      P.times.push(secs);
+      const tm = $app.querySelector('[data-times]');
+      if (tm) tm.textContent = 'Round times: ' + P.times.map(x => x.toFixed(1) + ' s').join(' · ') + '. Even beats fast.';
+      if (P.round < P.reps) {
+        P.round++; P.idx = 0; P.roundStart = null;
+        rearm(current());
+        if (S.input === 'keys') P.held.clear();
+        setFeedback('Round ' + (P.round - 1) + ' done. Go again from the start.', 'good');
+        const r = $app.querySelector('[data-round]'); if (r) r.textContent = 'Round ' + P.round + ' of ' + P.reps;
+        updateSeqUi();
+        return;
+      }
     }
     P.done = true;
     if (S.input === 'keys') setTimeout(() => { if (P && P.done) { P.held.clear(); paintKeyboard(); } }, 600);
@@ -422,11 +492,12 @@
       if (!notes.length) return;
       const last = notes[notes.length - 1];
       if (last % 12 === t.pc) hit();
-      else setFeedback('That was ' + PC_NAMES[last % 12] + '. Try again.', 'bad');
+      else setFeedback('That was ' + PC_NAMES[last % 12] + '. ' + (P.stepRef.hidden ? direction(last % 12, t) : 'Looking for ' + pretty(t.name) + '.'), 'bad');
       return;
     }
     const res = D.matchHeld(notes, t);
     if (res.ok) hit();
+    else if (t.kind === 'dyad') { if (notes.length >= t.pcs.length) setFeedback('Looking for ' + tLabel(t) + ' together.', 'bad'); }
     else if (notes.length >= t.pcs.length) setFeedback(describeMiss(res, t), 'bad');
     else setFeedback('', '');
   }
@@ -448,7 +519,7 @@
     const t = current();
     const chromaEl = $app.querySelector('[data-chroma]');
     if (chromaEl) {
-      const want = new Set(t ? (t.kind === 'note' ? [t.pc] : t.pcs) : []);
+      const want = new Set(t && !P.stepRef.hidden ? (t.kind === 'note' ? [t.pc] : t.pcs) : []);
       const tol = D.TOLERANCE[S.tol];
       for (let i = 0; i < 12; i++) {
         const v = fr.chroma ? fr.chroma[i] : 0;
@@ -469,7 +540,7 @@
       return;
     }
     if (fr.onset) P.armed = true;
-    if (!P.armed) { if (status) status.textContent = 'Let the last chord fade, or strike the next one.'; return; }
+    if (!P.armed) { if (status) status.textContent = t.seqNote ? 'Strike the key again.' : 'Let the last chord fade, or strike the next one.'; return; }
 
     let ok = false, res = null, heard = '';
     if (t.kind === 'note') {
@@ -481,6 +552,15 @@
       res = D.matchNote(midiF, t.pc, t.midi, S.tol);
       ok = res.ok;
       heard = res.nearest !== undefined ? 'Hearing ' + PC_NAMES[((res.nearest % 12) + 12) % 12] : '';
+    } else if (t.kind === 'dyad' && fr.chroma) {
+      // Two different notes (hands in contrary motion): both must sound clearly, and one of them must be the loudest.
+      const tol = D.TOLERANCE[S.tol] || D.TOLERANCE.normal;
+      let best = 0; for (let i = 1; i < 12; i++) if (fr.chroma[i] > fr.chroma[best]) best = i;
+      const missing = t.pcs.filter(pc => fr.chroma[pc] < tol.present);
+      ok = !missing.length && t.pcs.includes(best);
+      res = { missing };
+      const top = fr.chroma.map((v, i) => [v, i]).filter(x => x[0] > 0.35).sort((a, b) => b[0] - a[0]).slice(0, 4).map(x => PC_NAMES[x[1]]);
+      heard = top.length ? 'Hearing ' + top.join(' ') : '';
     } else if (fr.chroma) {
       res = D.matchChord(fr.chroma, t, S.tol, fr.bassPc);
       ok = res.ok;
@@ -491,13 +571,15 @@
     if (ok) {
       P.tryingSince = null;
       if (!P.okSince) P.okSince = now;
-      if (now - P.okSince >= HOLD_MS) hit();
+      if (now - P.okSince >= (t.seqNote ? NOTE_HOLD_MS : HOLD_MS)) hit();
     } else {
       P.okSince = null;
       if (!P.tryingSince) P.tryingSince = now;
       if (now - P.tryingSince > 1400 && now - P.lastHint > 1200 && res) {
         P.lastHint = now;
-        if (t.kind === 'note') setFeedback('Not quite. Looking for ' + pretty(t.name) + '.', 'bad');
+        if (t.kind === 'note' && P.stepRef.hidden && res.nearest !== undefined) setFeedback('Hearing ' + PC_NAMES[((res.nearest % 12) + 12) % 12] + '. ' + direction(((res.nearest % 12) + 12) % 12, t), 'bad');
+        else if (t.kind === 'note') setFeedback('Not quite. Looking for ' + pretty(t.name) + '.', 'bad');
+        else if (t.kind === 'dyad') setFeedback('Looking for ' + tLabel(t) + ' together.', 'bad');
         else setFeedback(describeMiss(res, t) || 'Not quite yet. Try striking all the notes together.', 'bad');
       }
     }
@@ -551,7 +633,8 @@
     });
     if (s.type === 'quiz' || s.type === 'listen') {
       const pl = $app.querySelector('[data-play-listen]');
-      if (pl) pl.onclick = () => playChords(resolveList(s.play, key));
+      if (pl) pl.onclick = () => s.melody ? playMelody(s.melody) : playChords(resolveList(s.play, key));
+      $app.querySelectorAll('[data-play-mel]').forEach(b => b.onclick = () => playMelody(s.melodyOptions[+b.dataset.playMel]));
       $app.querySelectorAll('[data-play-opt]').forEach(b => b.onclick = () => playChords(resolveList(s.playOptions[+b.dataset.playOpt], key)));
       $app.querySelectorAll('[data-opt]').forEach(b => b.onclick = () => {
         const i = +b.dataset.opt;
@@ -572,7 +655,11 @@
       if (succ) succ.innerHTML = '<div class="success"><span>' + esc(s.explain || 'Correct!') + '</span></div>';
     }
     const hear = $app.querySelector('[data-hear]');
-    if (hear) hear.onclick = () => {
+    if (hear && s.type === 'play-notes') hear.onclick = () => {
+      const chips = $app.querySelectorAll('[data-seq] .note-chip');
+      playMelody(s.notes, i => chips.forEach((c, j) => c.classList.toggle('playing', j === i)), s.hearSpeed || 0.5);
+    };
+    else if (hear) hear.onclick = () => {
       const chips = $app.querySelectorAll('[data-seq] .chip');
       playChords(P.seq.map(t => t.chord), chips.length ? (i => chips.forEach((c, j) => c.classList.toggle('playing', j === i))) : null);
     };

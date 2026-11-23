@@ -1,0 +1,1606 @@
+{
+ "id": "beatles-songs",
+ "version": 1,
+ "title": "Beatles Songs",
+ "subtitle": "Nine songs from easy to hard, plus a toolbox for working songs out by ear",
+ "description": "Learn from Beatles songs, ordered by difficulty. Every song teaches one thing: a chord trick, a moving line, a scale or a playing technique, tied back to the chord and scale lessons. You learn the chords and techniques here, then play along with the recording.",
+ "defaultKey": "C",
+ "lessons": [
+  {
+   "id": "love-me-do",
+   "part": "First songs",
+   "title": "Love Me Do: two chords, one hand shape",
+   "summary": "The first Beatles single. Switch between I and IV without moving your hand.",
+   "key": "G",
+   "steps": [
+    {
+     "type": "text",
+     "title": "How this course works",
+     "body": "Every lesson is one Beatles song, from easy to hard, and every song teaches one new thing: a chord trick, a line, a technique.\n\nThere are no lyrics or sheet music here. You learn the **chords and the technique** in the app, then you **listen to the recording and play along**. That's how the Beatles learned songs too: from records, by ear.\n\n**Tip:** most music players and video sites let you slow a song down (playback speed 0.75). Start slow, the key stays the same."
+    },
+    {
+     "type": "text",
+     "title": "Why Love Me Do",
+     "body": "Their first single (1962) is in **G major** and the verse uses just two chords: **G (I)** and **C (IV)**. The middle section adds **D (V)**. It's the I–IV–V family from the chord course.\n\nThe lesson here is a hand-shape trick. G is **G B D**. If you play C as **G C E** instead of C E G, the **G stays under your thumb** and only two fingers move. That's the second inversion, written **C/G**. Smooth changes come from keeping shared notes still.",
+     "examples": [
+      {
+       "label": "G – C/G – G – C/G",
+       "progression": [
+        "I",
+        {
+         "roman": "IV",
+         "inversion": 2
+        },
+        "I",
+        {
+         "roman": "IV",
+         "inversion": 2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-chord",
+     "prompt": "Play C with G as the lowest note (G C E).",
+     "roman": "IV",
+     "inversion": 2,
+     "checkBass": true,
+     "explain": "G C E. The thumb stays on G, the note C shares with G."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Verse: switch G, C/G, G, C/G. Keep your thumb on G the whole time.",
+     "progression": [
+      "I",
+      {
+       "roman": "IV",
+       "inversion": 2,
+       "checkBass": true
+      },
+      "I",
+      {
+       "roman": "IV",
+       "inversion": 2,
+       "checkBass": true
+      }
+     ],
+     "explain": "Only fingers 3 and 5 move up one step. That's why it feels effortless."
+    },
+    {
+     "type": "text",
+     "title": "The middle section: V – IV – I",
+     "body": "The middle of the song climbs to **D (V)**, steps down to **C (IV)** and lands on **G (I)**. That's the I–V–IV rock turnaround from the chord course, just started from V.\n\nLeft hand: play the **root of each chord** low on the keys (G, C, D). Right hand: the chord on every beat."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Middle section: V, IV, I.",
+     "progression": [
+      "V",
+      "IV",
+      "I"
+     ],
+     "explain": "D, C, G. Tension, step down, home."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand bass line: the roots of the whole song.",
+     "hand": "lh",
+     "notes": [
+      "G2",
+      "C3",
+      "G2",
+      "C3",
+      "D3",
+      "C3",
+      "G2"
+     ],
+     "fingersLH": [
+      5,
+      2,
+      5,
+      2,
+      1,
+      2,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here. Then play it with the recording: one bass note per bar, right hand chords on every beat.",
+     "explain": "G and C a fourth apart, then D, C, G. Your left hand just found its first bass line."
+    },
+    {
+     "type": "quiz",
+     "question": "In G major, which chord is IV?",
+     "options": [
+      "C",
+      "D",
+      "Em",
+      "F"
+     ],
+     "answer": 0,
+     "explain": "Count G A B C: the fourth note is C, so IV is C major."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Put the recording on and play **left hand roots + right hand chords on every beat**. Listen for where the song changes from G to C. The harmonica riff and the middle section will tell you when D comes.\n\n**Practice goal:** play the whole song once along with the record without stopping. Mistakes are fine, stopping is not: if you lose your place, just wait for the next G."
+    }
+   ]
+  },
+  {
+   "id": "let-it-be",
+   "part": "First songs",
+   "title": "Let It Be: the pop progression on piano",
+   "summary": "I–V–vi–IV with a steady right hand and a walking fill in the bass.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Let It Be",
+     "body": "Paul plays this one on piano, in **C major**, white keys only. It's built from the **I–V–vi–IV** pop progression you already know, and its little cousin **I–V–IV–I**.\n\nThe piano part is the lesson: a **steady right hand** playing chords in even pulses, and a left hand that holds the bass.",
+     "examples": [
+      {
+       "label": "Verse: I–V–vi–IV, I–V–IV–I",
+       "progression": [
+        "I",
+        "V",
+        "vi",
+        "IV",
+        "I",
+        "V",
+        "IV",
+        "I"
+       ]
+      },
+      {
+       "label": "Chorus: vi–V–IV–I",
+       "progression": [
+        "vi",
+        "V",
+        "IV",
+        "I"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "First half of the verse: I, V, vi, IV.",
+     "progression": [
+      "I",
+      "V",
+      "vi",
+      "IV"
+     ],
+     "explain": "C, G, Am, F. The pop axis."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Second half: I, V, IV, I.",
+     "progression": [
+      "I",
+      "V",
+      "IV",
+      "I"
+     ],
+     "explain": "Ends at home, ready to start again."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Chorus: vi, V, IV, I. It starts on the minor chord.",
+     "progression": [
+      "vi",
+      "V",
+      "IV",
+      "I"
+     ],
+     "explain": "Am, G, F, C. Starting on vi makes the chorus feel more serious, then it walks down home."
+    },
+    {
+     "type": "text",
+     "title": "The piano pattern",
+     "body": "**Left hand:** the root of each chord, held for the whole bar (two bars per chord feel is also fine).\n\n**Right hand:** the chord, played in **even pulses**: start with 4 per bar, later 8. Keep the hand close to the keys and let the wrist do the bouncing.\n\n**The fill:** at the end of the chorus the bass walks down **F – E – D – C** under the chords **F – C/E – Dm – C**. It's an inversion trick: C with E in the bass fills the gap between F and Dm."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: the walking fill, F E D C.",
+     "hand": "lh",
+     "notes": [
+      "F2",
+      "E2",
+      "D2",
+      "C2"
+     ],
+     "fingersLH": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "5 rounds, slow and even. Then play it under the chords below.",
+     "explain": "Four steps down to home. Listen for it at the end of the chorus."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "The fill with chords: IV, I⁶ (C with E in the bass), ii, I.",
+     "progression": [
+      "IV",
+      {
+       "roman": "I",
+       "inversion": 1,
+       "checkBass": true
+      },
+      "ii",
+      "I"
+     ],
+     "explain": "The bass walks F, E, D, C while the chords follow."
+    },
+    {
+     "type": "listen",
+     "question": "Which one is the first half of the verse?",
+     "playOptions": [
+      [
+       "I",
+       "V",
+       "vi",
+       "IV"
+      ],
+      [
+       "I",
+       "V",
+       "IV",
+       "I"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 0,
+     "explain": "Progression 1 has the minor vi (Am). Progression 2 is the second half, I–V–IV–I."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "With the recording: left hand roots, right hand chords in 4 even pulses per bar. When that's easy, go to 8.\n\n**Practice goal:** 3 times through along with the record. Then try it **without** the record, singing the melody in your head, and add the walking fill at the end of each chorus."
+    }
+   ]
+  },
+  {
+   "id": "hey-jude",
+   "part": "Chords that lead somewhere",
+   "title": "Hey Jude: V7, I7 and the long ♭VII outro",
+   "summary": "A piano ballad in F with three tricks, and four minutes to improvise over.",
+   "key": "F",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Hey Jude",
+     "body": "Another Paul piano song, in **F major** (one flat: B♭, from the F scale lesson). It shows three tricks:\n\n**1. V7:** C7 pulls hard back to F.\n**2. I7:** add E♭ to F and it becomes F7, which pulls to **B♭ (IV)**. A chord can point to a new chord, not only home.\n**3. ♭VII:** the long outro repeats **F – E♭ – B♭ – F** (I–♭VII–IV–I) for about four minutes.",
+     "examples": [
+      {
+       "label": "Verse",
+       "progression": [
+        "I",
+        "V",
+        "V7",
+        "I",
+        "IV",
+        "I",
+        "V7",
+        "I"
+       ]
+      },
+      {
+       "label": "Outro",
+       "progression": [
+        "I",
+        "bVII",
+        "IV",
+        "I"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "The verse: I, V, V7, I, IV, I, V7, I.",
+     "progression": [
+      "I",
+      "V",
+      "V7",
+      "I",
+      "IV",
+      "I",
+      "V7",
+      "I"
+     ],
+     "explain": "F, C, C7, F, B♭, F, C7, F. Hear how C7 leans harder towards F than plain C."
+    },
+    {
+     "type": "text",
+     "title": "I7: the door to IV",
+     "body": "F7 is **F A C E♭**. That E♭ is not in F major, and it wants to fall to D, a note of B♭. So F7 works like the **V7 of B♭**.\n\nThe middle section of the song uses exactly this move: F7 opens the door and the song steps into B♭."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play I, I7, IV.",
+     "progression": [
+      "I",
+      {
+       "roman": "I7",
+       "function": "dominant"
+      },
+      "IV"
+     ],
+     "explain": "F, F7, B♭. The E♭ drops to D. One note turned home into a signpost."
+    },
+    {
+     "type": "text",
+     "title": "The outro: I–♭VII–IV–I",
+     "body": "E♭ is **♭VII**, borrowed from F minor (the color-chord lesson). E♭ to B♭ to F: each chord is a fourth below the last, a very open, anthem-like sound.\n\nBecause it repeats for minutes, the outro is the best place in any Beatles song to **improvise**. The scale that fits all three chords is F major with E♭ instead of E: **F G A B♭ C D E♭**. That's called **F Mixolydian**."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Outro: I, ♭VII, IV, I.",
+     "progression": [
+      "I",
+      "bVII",
+      "IV",
+      "I"
+     ],
+     "explain": "F, E♭, B♭, F."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: F Mixolydian, the outro scale, up and down.",
+     "hand": "rh",
+     "notes": [
+      "F4",
+      "G4",
+      "A4",
+      "Bb4",
+      "C5",
+      "D5",
+      "Eb5",
+      "F5",
+      "Eb5",
+      "D5",
+      "C5",
+      "Bb4",
+      "A4",
+      "G4",
+      "F4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      4,
+      1,
+      2,
+      3,
+      4,
+      3,
+      2,
+      1,
+      4,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 daily. Note finger 4 on B♭, the same as the F major scale.",
+     "explain": "F major with an E♭. Every note fits the outro."
+    },
+    {
+     "type": "quiz",
+     "question": "Which chord does F7 want to move to?",
+     "options": [
+      "B♭",
+      "C",
+      "Dm",
+      "E♭"
+     ],
+     "answer": 0,
+     "explain": "F7 is the V7 of B♭. Its E♭ falls to D and its A rises to B♭."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Play the verse along with the recording, left hand roots, right hand chords. Then skip to the outro: left hand plays F, E♭, B♭, F, and your **right hand improvises with F Mixolydian**. Start with slow single notes, land on F or C at the end of each round.\n\n**Practice goal:** improvise over the whole outro once without stopping."
+    }
+   ]
+  },
+  {
+   "id": "hold-your-hand",
+   "part": "Chords that lead somewhere",
+   "title": "I Want to Hold Your Hand: III7 and a visit to IV",
+   "summary": "A major chord where you expect minor, and a ii–V–I in a new key.",
+   "key": "G",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why this song",
+     "body": "A fast, joyful early single in **G major**. Two lessons:\n\n**1.** The verse goes **G – D – Em – B7**. In G major the chord on B should be **Bm**, but they play **B7**: **B D♯ F♯ A**. That D♯ is outside the key and pulls up to E. B7 is the **V7 of Em**, a *secondary dominant*.\n\n**2.** The middle section plays **Dm7 – G7 – C**: a **ii–V–I in C**. For a moment C (IV) feels like home.",
+     "examples": [
+      {
+       "label": "Verse: I–V–vi–III7",
+       "progression": [
+        "I",
+        "V",
+        "vi",
+        {
+         "roman": "III7",
+         "function": "dominant"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-chord",
+     "prompt": "Play B7, the III7 in G.",
+     "roman": "III7",
+     "function": "dominant",
+     "explain": "B D♯ F♯ A. The D♯ is the leading tone of Em."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Verse: I, V, vi, III7, then back to I.",
+     "progression": [
+      "I",
+      "V",
+      "vi",
+      {
+       "roman": "III7",
+       "function": "dominant"
+      },
+      "I"
+     ],
+     "explain": "G, D, Em, B7, G. B7 sets up Em, but the song goes back to G instead: a nice surprise."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "End of the verse: IV, V, I, vi, IV, V, I.",
+     "progression": [
+      "IV",
+      "V",
+      "I",
+      "vi",
+      "IV",
+      "V",
+      "I"
+     ],
+     "explain": "C, D, G, Em, C, D, G. Plain I–IV–V, the bright payoff."
+    },
+    {
+     "type": "text",
+     "title": "The middle section: a ii–V–I in C",
+     "body": "The bridge plays **Dm7 – G7 – C – Am**, twice. In the key of C that's **ii7 – V7 – I – vi**, the ii–V–I from the chord course. Then it builds back with **C – D** over and over (IV–V in G) until the verse returns.\n\nThis is how songs **change key for a moment**: play the ii–V of the new key and the ear follows."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Bridge, thinking in C: ii7, V7, I, vi, ii7, V7, I.",
+     "progression": [
+      "ii7",
+      "V7",
+      "I",
+      "vi",
+      "ii7",
+      "V7",
+      "I"
+     ],
+     "explain": "Dm7, G7, C, Am. Same chords as the ii–V–I lesson.",
+     "key": "C"
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: B7 broken up, then landing on Em. Feel D♯ rise to E.",
+     "hand": "rh",
+     "notes": [
+      "B3",
+      "D#4",
+      "F#4",
+      "A4",
+      "G4",
+      "E4",
+      "B3"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      5,
+      4,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "5 rounds. Play it slowly and listen to the D♯ → E pull.",
+     "explain": "D♯ is the note that makes B7 point to Em."
+    },
+    {
+     "type": "quiz",
+     "question": "In C major, which chord would be the V7 of Am (vi)?",
+     "options": [
+      "E7",
+      "G7",
+      "D7",
+      "A7"
+     ],
+     "answer": 0,
+     "explain": "Five notes up from A is E, so the V7 of Am is E7: III7 in C."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "This one is fast. Slow the recording down first. Right hand: chords on **every beat**, short and punchy, like the hand claps. Left hand: roots.\n\n**Practice goal:** play the verse and middle section along with the slowed-down recording, then at full speed."
+    }
+   ]
+  },
+  {
+   "id": "yesterday",
+   "part": "Chords that lead somewhere",
+   "title": "Yesterday: a detour into the minor chord",
+   "summary": "A ii–V into the minor vi, a bass line that walks down, and ballad broken chords.",
+   "key": "F",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Yesterday",
+     "body": "On the record it's Paul's guitar and a string quartet, sounding in **F major**. On piano it becomes a ballad lesson.\n\nRight after the first chord the song takes a detour: **Em7 – A7 – Dm**. A7 has a C♯, outside the key: it's the **V7 of Dm**, written **III7** in F. And Em7 is the ii of Dm. So Em7 – A7 – Dm is a little **ii–V–i into the relative minor**, Dm (vi).\n\nThen the bass **walks down D – C – B♭** into **B♭ (IV)**, and **C7 (V7)** brings it home.",
+     "examples": [
+      {
+       "label": "F – Em7 – A7 – Dm – B♭ – C7 – F",
+       "progression": [
+        "I",
+        "vii7",
+        {
+         "roman": "III7",
+         "function": "dominant"
+        },
+        "vi",
+        "IV",
+        "V7",
+        "I"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play F, Em7, A7, Dm.",
+     "progression": [
+      "I",
+      "vii7",
+      {
+       "roman": "III7",
+       "function": "dominant"
+      },
+      "vi"
+     ],
+     "explain": "F, Em7, A7, Dm. The C♯ in A7 pulls up to D."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Now the way home: vi, vi7 with C in the bass, IV, V7, I.",
+     "progression": [
+      "vi",
+      {
+       "roman": "vi7",
+       "inversion": 3,
+       "checkBass": true
+      },
+      "IV",
+      "V7",
+      "I"
+     ],
+     "explain": "Dm, Dm7/C, B♭, C7, F. The bass walks D, C, B♭."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: the bass line of the whole phrase.",
+     "hand": "lh",
+     "notes": [
+      "F2",
+      "E2",
+      "A2",
+      "D2",
+      "C2",
+      "Bb1",
+      "C2",
+      "F2"
+     ],
+     "reps": 3,
+     "practice": "5 rounds. Use the fingers that feel natural; many ballad players take every low bass note with finger 5 or 4.",
+     "explain": "F, E, A, D, then down C, B♭, and C7 to F."
+    },
+    {
+     "type": "text",
+     "title": "Ballad broken chords",
+     "body": "Instead of hitting chords, a ballad often plays them **one note at a time**: 1–3–5–3 of the chord, over the bass note. It keeps the sound moving while the tempo is slow.\n\nKeep the hand in one shape per chord and move the whole shape. Fingers **1, 3, 5, 3**."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: broken chords F, Dm, B♭, C7, F.",
+     "hand": "rh",
+     "notes": [
+      "F4",
+      "A4",
+      "C5",
+      "A4",
+      "D4",
+      "F4",
+      "A4",
+      "F4",
+      "D4",
+      "F4",
+      "Bb4",
+      "F4",
+      "E4",
+      "G4",
+      "Bb4",
+      "G4",
+      "F4",
+      "A4",
+      "C5"
+     ],
+     "fingers": [
+      1,
+      3,
+      5,
+      3,
+      1,
+      3,
+      5,
+      3,
+      1,
+      3,
+      5,
+      3,
+      1,
+      3,
+      5,
+      3,
+      1,
+      3,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, then daily with the left hand bass under it.",
+     "explain": "Each chord keeps the same hand shape. B♭ is played as D F B♭ so the hand barely moves."
+    },
+    {
+     "type": "quiz",
+     "question": "In F major, which chord leads strongly into Dm?",
+     "options": [
+      "A7",
+      "C7",
+      "G7",
+      "B♭"
+     ],
+     "answer": 0,
+     "explain": "A is five notes above D, so A7 is the V7 of Dm. Its C♯ pulls to D."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Play along softly: left hand bass notes, right hand broken chords. When the music gets to the detour (Em7 – A7 – Dm), listen to how the A7 makes the Dm sound inevitable.\n\n**Practice goal:** one full, slow, even play-through with the record."
+    }
+   ]
+  },
+  {
+   "id": "in-my-life",
+   "part": "Colors and inner lines",
+   "title": "In My Life: IV to iv, and a solo built from scales",
+   "summary": "The borrowed minor iv, and fast clean scale runs.",
+   "key": "A",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why In My Life",
+     "body": "In **A major** (three sharps: F♯, C♯, G♯). The verse is **A – E – F♯m – A7 – D – Dm – A**: I–V–vi–I7–IV–**iv**–I.\n\nTwo tricks you know: **A7** points to D (like F7 in Hey Jude), and **D → Dm** is the borrowed minor iv from the color-chord lesson. One note changes, **F♯ drops to F**, and the line keeps falling to E in the A chord. That's the bittersweet sigh.",
+     "examples": [
+      {
+       "label": "Verse",
+       "progression": [
+        "I",
+        "V",
+        "vi",
+        {
+         "roman": "I7",
+         "function": "dominant"
+        },
+        "IV",
+        "iv",
+        "I"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "The verse: I, V, vi, I7, IV, iv, I.",
+     "progression": [
+      "I",
+      "V",
+      "vi",
+      {
+       "roman": "I7",
+       "function": "dominant"
+      },
+      "IV",
+      "iv",
+      "I"
+     ],
+     "explain": "A, E, F♯m, A7, D, Dm, A. Listen to the D → Dm moment."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands: the falling line F♯ – F – E over the bass D, D, A.",
+     "hand": "both",
+     "notes": [
+      [
+       "F#4",
+       "D3"
+      ],
+      [
+       "F4",
+       "D3"
+      ],
+      [
+       "E4",
+       "A2"
+      ]
+     ],
+     "fingers": [
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      2,
+      2,
+      5
+     ],
+     "reps": 3,
+     "practice": "5 rounds. Play it slowly, the second note a little softer.",
+     "explain": "That half-step line is the whole emotional effect of IV–iv–I."
+    },
+    {
+     "type": "text",
+     "title": "The solo",
+     "body": "The solo is a fast baroque-style piano piece. George Martin played it at **half speed, an octave lower**, then the tape was sped up. That's why it sounds like a harpsichord and is so fast.\n\nYou don't need it note for note to learn from it: it's made of **A major scale runs**. The way to get fast and clean is the repetition rule: **slow and even first**, then 4 to 6 bpm faster when 3 rounds in a row are clean."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: A major scale, one octave up and down.",
+     "hand": "rh",
+     "notes": [
+      "A4",
+      "B4",
+      "C#5",
+      "D5",
+      "E5",
+      "F#5",
+      "G#5",
+      "A5",
+      "G#5",
+      "F#5",
+      "E5",
+      "D5",
+      "C#5",
+      "B4",
+      "A4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 daily. Start at 60 bpm, two notes per click when that's clean.",
+     "explain": "The thumb goes under after C♯ on the way up and finger 3 crosses over to C♯ on the way down."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: A major scale.",
+     "hand": "lh",
+     "notes": [
+      "A2",
+      "B2",
+      "C#3",
+      "D3",
+      "E3",
+      "F#3",
+      "G#3",
+      "A3",
+      "G#3",
+      "F#3",
+      "E3",
+      "D3",
+      "C#3",
+      "B2",
+      "A2"
+     ],
+     "fingersLH": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, 5 daily plus 2 extra for the left hand.",
+     "explain": "Finger 3 crosses over to F♯ going up; the thumb goes under to E going down."
+    },
+    {
+     "type": "quiz",
+     "question": "In A major, which note changes when IV (D) becomes iv (Dm)?",
+     "options": [
+      "F♯ becomes F",
+      "D becomes D♭",
+      "A becomes A♭",
+      "C♯ becomes C"
+     ],
+     "answer": 0,
+     "explain": "D major is D F♯ A. D minor is D F A. Only the third drops."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Play the verse with the record: left hand roots, right hand chords. Make the D → Dm change obvious by holding the chord a bit longer.\n\nAt the solo, play **A major scale runs** in time with the record, up and down. **Practice goal:** stay in time through the whole solo, even if you only play quarter notes."
+    }
+   ]
+  },
+  {
+   "id": "something",
+   "part": "Colors and inner lines",
+   "title": "Something: chords with a line moving inside",
+   "summary": "C – Cmaj7 – C7 – F: one voice falls chromatically while the chord stays.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Something",
+     "body": "George Harrison's ballad, in **C major**. Its signature is a **chromatic line inside the chords**: the chord stays C, but one note slides down **C – B – B♭ – A**:\n\n**C** (C E G) → **Cmaj7** (B on top) → **C7** (B♭ on top) → **F** (A on top).\n\nThis is called a **line cliché**. It turns a static chord into a little melody.",
+     "examples": [
+      {
+       "label": "I – Imaj7 – I7 – IV",
+       "progression": [
+        "I",
+        "Imaj7",
+        {
+         "roman": "I7",
+         "function": "dominant"
+        },
+        "IV"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play I, Imaj7, I7, IV.",
+     "progression": [
+      "I",
+      "Imaj7",
+      {
+       "roman": "I7",
+       "function": "dominant"
+      },
+      "IV"
+     ],
+     "explain": "C, Cmaj7, C7, F. C7 is also the I7 → IV move from Hey Jude."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands: the line C – B – B♭ – A on top, C and F in the bass.",
+     "hand": "both",
+     "notes": [
+      [
+       "C5",
+       "C3"
+      ],
+      [
+       "B4",
+       "C3"
+      ],
+      [
+       "Bb4",
+       "C3"
+      ],
+      [
+       "A4",
+       "F3"
+      ]
+     ],
+     "fingers": [
+      5,
+      4,
+      3,
+      2
+     ],
+     "fingersLH": [
+      5,
+      5,
+      5,
+      2
+     ],
+     "reps": 3,
+     "practice": "5 rounds. Then fill in the chords with your middle fingers.",
+     "explain": "The left hand holds C while the right hand slides down, then both land on F."
+    },
+    {
+     "type": "text",
+     "title": "The same trick in minor",
+     "body": "Next the song goes **D7 → G**: **II7 – V**, the V7 *of* V (a secondary dominant again: F♯ pulls to G).\n\nThen the line cliché comes back on **Am**: the top note falls **A – G♯ – G – F♯** (Am, Am with G♯, Am7, D7). And the phrase ends with **F – E♭ – G – C**: IV – **♭III** – V – I. E♭ is borrowed from C minor. It's the same E♭ chord as in Hey Jude, but in C it sits on the third step, so it's ♭III."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play II7, V.",
+     "progression": [
+      {
+       "roman": "II7",
+       "function": "dominant"
+      },
+      "V"
+     ],
+     "explain": "D7, G. F♯ rises to G."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands: the minor line A – G♯ – G – F♯ over A, then D in the bass.",
+     "hand": "both",
+     "notes": [
+      [
+       "A4",
+       "A2"
+      ],
+      [
+       "G#4",
+       "A2"
+      ],
+      [
+       "G4",
+       "A2"
+      ],
+      [
+       "F#4",
+       "D3"
+      ]
+     ],
+     "fingers": [
+      4,
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      5,
+      5,
+      5,
+      2
+     ],
+     "reps": 3,
+     "practice": "5 rounds.",
+     "explain": "Same idea in minor: one voice slides down a half step at a time."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "End of the phrase: IV, ♭III, V, I.",
+     "progression": [
+      "IV",
+      "bIII",
+      "V",
+      "I"
+     ],
+     "explain": "F, E♭, G, C. The E♭ is a surprise before the normal V–I."
+    },
+    {
+     "type": "quiz",
+     "question": "What moves when C becomes Cmaj7 in this song?",
+     "options": [
+      "C slides down to B",
+      "E slides to F",
+      "G slides to A",
+      "The bass moves to B"
+     ],
+     "answer": 0,
+     "explain": "The chord stays C; only the top note slides down a half step. That's a line cliché."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Play along with the record at a slow tempo. Right hand plays the chords **with the moving note on top** so you hear the line clearly. Left hand: roots, or a held C under the whole line cliché.\n\n**Practice goal:** play the verse along with the recording, making both lines (C B B♭ A and A G♯ G F♯) audible."
+    }
+   ]
+  },
+  {
+   "id": "eleanor-rigby",
+   "part": "Colors and inner lines",
+   "title": "Eleanor Rigby: minor, Dorian and staccato",
+   "summary": "Two chords, a minor mode with a raised sixth, and short sharp playing.",
+   "key": "Em",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Eleanor Rigby",
+     "body": "No Beatle plays an instrument on this one: it's a **string octet** (arranged by George Martin) playing short, driving chords. It's in **E minor** and mostly uses just two chords: **Em (i)** and **C (VI)**.\n\nThe melody has a twist: sometimes it uses **C♯** instead of C. Minor with a raised sixth is called **Dorian**. It sounds less sad and more like an old folk song.",
+     "examples": [
+      {
+       "label": "VI – i",
+       "progression": [
+        "VI",
+        "i"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play VI, i (C, then Em).",
+     "progression": [
+      "VI",
+      "i"
+     ],
+     "explain": "C to Em: the opening move."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: E natural minor, up and down.",
+     "hand": "rh",
+     "notes": [
+      "E4",
+      "F#4",
+      "G4",
+      "A4",
+      "B4",
+      "C5",
+      "D5",
+      "E5",
+      "D5",
+      "C5",
+      "B4",
+      "A4",
+      "G4",
+      "F#4",
+      "E4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds.",
+     "explain": "E F♯ G A B C D: the same notes as G major, starting on E."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Right hand: E Dorian. Same scale with C♯ instead of C.",
+     "hand": "rh",
+     "notes": [
+      "E4",
+      "F#4",
+      "G4",
+      "A4",
+      "B4",
+      "C#5",
+      "D5",
+      "E5",
+      "D5",
+      "C#5",
+      "B4",
+      "A4",
+      "G4",
+      "F#4",
+      "E4"
+     ],
+     "fingers": [
+      1,
+      2,
+      3,
+      1,
+      2,
+      3,
+      4,
+      5,
+      4,
+      3,
+      2,
+      1,
+      3,
+      2,
+      1
+     ],
+     "reps": 3,
+     "practice": "3 rounds here, then alternate the two scales daily.",
+     "explain": "One note different, and the whole mood shifts."
+    },
+    {
+     "type": "listen",
+     "question": "Which one is Dorian?",
+     "melodyOptions": [
+      [
+       "E4",
+       "G4",
+       "A4",
+       "B4",
+       "C5",
+       "B4",
+       "A4",
+       "G4",
+       "E4"
+      ],
+      [
+       "E4",
+       "G4",
+       "A4",
+       "B4",
+       "C#5",
+       "B4",
+       "A4",
+       "G4",
+       "E4"
+      ]
+     ],
+     "options": [
+      "Melody 1",
+      "Melody 2"
+     ],
+     "answer": 1,
+     "explain": "Melody 2 has C♯, the raised sixth. Melody 1 has C, natural minor."
+    },
+    {
+     "type": "text",
+     "title": "The chorus line: E – D – C♯ – C",
+     "body": "The chorus moves **Em – Em7 – Em6 – C**. Look at the top: **E – D – C♯ – C**. It's the line cliché from Something, in minor. And Em6 contains the C♯: the Dorian sixth again."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands: the line E – D – C♯ – C over the bass E, then C.",
+     "hand": "both",
+     "notes": [
+      [
+       "E4",
+       "E3"
+      ],
+      [
+       "D4",
+       "E3"
+      ],
+      [
+       "C#4",
+       "E3"
+      ],
+      [
+       "C4",
+       "C3"
+      ]
+     ],
+     "fingers": [
+      4,
+      3,
+      2,
+      1
+     ],
+     "fingersLH": [
+      1,
+      1,
+      1,
+      3
+     ],
+     "reps": 3,
+     "practice": "5 rounds.",
+     "explain": "One voice slides down while the bass holds E, then the bass drops to C."
+    },
+    {
+     "type": "text",
+     "title": "Staccato: short and sharp",
+     "body": "The strings play **staccato**: every chord short, with silence in between. On piano: drop onto the keys from just above them and **bounce off with the wrist**, not the arm. Fingers stay firm, wrist stays loose.\n\nStart with 4 short chords per bar, all equally loud."
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play i, VI, i as short staccato chords (4 bounces each when you practise on your own).",
+     "progression": [
+      "i",
+      "VI",
+      "i"
+     ],
+     "explain": "Em, C, Em. Short, sharp, even."
+    },
+    {
+     "type": "quiz",
+     "question": "What makes Dorian different from natural minor?",
+     "options": [
+      "A raised 6th",
+      "A raised 7th",
+      "A lowered 2nd",
+      "A lowered 5th"
+     ],
+     "answer": 0,
+     "explain": "Dorian = natural minor with the 6th raised a half step. In E: C becomes C♯."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "With the recording: left hand E (or C) as a low bass note, right hand **staccato chords** on every beat. In the chorus, play the falling line E D C♯ C on top.\n\n**Practice goal:** keep the staccato even through the whole song, without the chords getting longer when you get tired."
+    }
+   ]
+  },
+  {
+   "id": "lady-madonna",
+   "part": "Groove and ear",
+   "title": "Lady Madonna: boogie left hand and ♭VI–♭VII–I",
+   "summary": "A rolling left hand, independent hands, and a borrowed climb to home.",
+   "key": "A",
+   "steps": [
+    {
+     "type": "text",
+     "title": "Why Lady Madonna",
+     "body": "Paul's rocking piano song in **A major**, inspired by 1950s boogie-woogie and rhythm-and-blues piano. Two lessons:\n\n**1. Harmony:** the verse rocks between **A (I)** and **D (IV)**, then climbs **F – G – A**: **♭VI – ♭VII – I**. F and G are borrowed from A minor, and climbing through them makes A sound like a big arrival.\n\n**2. Technique:** a **left hand that keeps moving** while the right hand plays something different. That's real hand independence, the hardest skill in this course.",
+     "examples": [
+      {
+       "label": "I–IV ×3, ♭VI–♭VII–I",
+       "progression": [
+        "I",
+        "IV",
+        "I",
+        "IV",
+        "I",
+        "IV",
+        "bVI",
+        "bVII",
+        "I"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "play-progression",
+     "prompt": "Play the verse shape: I, IV three times, then ♭VI, ♭VII, I.",
+     "progression": [
+      "I",
+      "IV",
+      "I",
+      "IV",
+      "I",
+      "IV",
+      "bVI",
+      "bVII",
+      "I"
+     ],
+     "explain": "A, D, A, D, A, D, F, G, A."
+    },
+    {
+     "type": "text",
+     "title": "A boogie bass pattern",
+     "body": "Here's a classic boogie pattern (a general pattern, not the record's exact riff): **root – fifth – sixth – fifth**, over and over, in a bouncy swing rhythm. On A: **A – E – F♯ – E**. On D: **D – A – B – A**.\n\nFingers **5 – 2 – 1 – 2**. The hand shape stays the same; just move it to the next root."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: the boogie pattern on A, twice, then on D, twice.",
+     "hand": "lh",
+     "notes": [
+      "A2",
+      "E3",
+      "F#3",
+      "E3",
+      "A2",
+      "E3",
+      "F#3",
+      "E3",
+      "D3",
+      "A3",
+      "B3",
+      "A3",
+      "D3",
+      "A3",
+      "B3",
+      "A3"
+     ],
+     "fingersLH": [
+      5,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2
+     ],
+     "reps": 3,
+     "practice": "5 rounds plus 2 extra. When it's even, swing it: long-short, long-short.",
+     "explain": "Root, fifth, sixth, fifth. Same shape on every chord."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Left hand: the same pattern on F, G and A for the climb home.",
+     "hand": "lh",
+     "notes": [
+      "F2",
+      "C3",
+      "D3",
+      "C3",
+      "G2",
+      "D3",
+      "E3",
+      "D3",
+      "A2",
+      "E3",
+      "F#3",
+      "E3"
+     ],
+     "fingersLH": [
+      5,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2,
+      5,
+      2,
+      1,
+      2
+     ],
+     "reps": 3,
+     "practice": "5 rounds.",
+     "explain": "F and G use the same shape. Only the A pattern has a black key."
+    },
+    {
+     "type": "text",
+     "title": "Hands together",
+     "body": "Now add the right hand: a short **A chord on beats 2 and 4** (the off beats) while the left hand keeps the pattern going. Start with just one right hand note, **C♯**, so your brain only has to manage the rhythm.\n\nPractise at **60 bpm** first. If the left hand stops when the right hand plays, slow down further."
+    },
+    {
+     "type": "play-notes",
+     "prompt": "Both hands: left hand boogie on A, right hand C♯ on the 2nd and 4th notes.",
+     "hand": "both",
+     "notes": [
+      "A2",
+      [
+       "E3",
+       "C#5"
+      ],
+      "F#3",
+      [
+       "E3",
+       "C#5"
+      ],
+      "A2",
+      [
+       "E3",
+       "C#5"
+      ],
+      "F#3",
+      [
+       "E3",
+       "C#5"
+      ]
+     ],
+     "reps": 3,
+     "practice": "5 rounds. Then replace the C♯ with a full A chord (A C♯ E), and later move both hands to D.",
+     "explain": "Right hand on the off beats, left hand never stops. That's the boogie feel."
+    },
+    {
+     "type": "quiz",
+     "question": "In A major, which chords are ♭VI and ♭VII?",
+     "options": [
+      "F and G",
+      "F♯m and G♯dim",
+      "E and D",
+      "C and D"
+     ],
+     "answer": 0,
+     "explain": "Lower the 6th and 7th degrees of A major (F♯, G♯) and build major chords: F and G."
+    },
+    {
+     "type": "text",
+     "title": "Now play along with the record",
+     "body": "Play along with a slowed-down recording. First only the left hand pattern, following A and D, and the F – G – A climb. Then add short right hand chords on the off beats.\n\n**Practice goal:** one full verse hands together without the left hand stopping. Tempo comes later."
+    }
+   ]
+  },
+  {
+   "id": "beatles-toolbox",
+   "part": "Groove and ear",
+   "title": "Your Beatles toolbox: work songs out by ear",
+   "summary": "Hear the tricks from this course, then find the chords of new songs yourself.",
+   "key": "C",
+   "steps": [
+    {
+     "type": "text",
+     "title": "How to work out a song",
+     "body": "**1. Find home.** Hum the end of the chorus and find that note: that's the key.\n**2. Find the bass.** Play along with single bass notes. Bass notes are the roots of most chords.\n**3. Try I, IV, V and vi first.** They cover most of any song.\n**4. Something sounds outside the key?** Check your Beatles toolbox:\n\n**♭VII** (Hey Jude) · **♭III** (Something) · **iv** after IV (In My Life) · **III7** right before the vi chord (I Want to Hold Your Hand, Yesterday) · **I7** before IV (Hey Jude) · **♭VI–♭VII–I** (Lady Madonna) · a **moving inner line** (Something, Eleanor Rigby)."
+    },
+    {
+     "type": "listen",
+     "question": "Which progression has the In My Life trick?",
+     "playOptions": [
+      [
+       "I",
+       "IV",
+       "iv",
+       "I"
+      ],
+      [
+       "I",
+       "IV",
+       "V",
+       "I"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 0,
+     "explain": "Progression 1 goes IV → iv: the major chord turns minor before home."
+    },
+    {
+     "type": "listen",
+     "question": "Which one uses the borrowed ♭VII?",
+     "playOptions": [
+      [
+       "I",
+       "V",
+       "IV",
+       "I"
+      ],
+      [
+       "I",
+       "bVII",
+       "IV",
+       "I"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 1,
+     "explain": "Progression 2: C, B♭, F, C. The Hey Jude outro shape."
+    },
+    {
+     "type": "listen",
+     "question": "Which one has a secondary dominant pulling into the minor chord?",
+     "playOptions": [
+      [
+       "I",
+       "iii",
+       "vi"
+      ],
+      [
+       "I",
+       "iii",
+       {
+        "roman": "III7",
+        "function": "dominant"
+       },
+       "vi"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 1,
+     "explain": "Progression 2 turns Em into E7, the V7 of Am: the G♯ pulls up to A. Same trick as B7 in I Want to Hold Your Hand and A7 in Yesterday."
+    },
+    {
+     "type": "listen",
+     "question": "Which ending climbs home through borrowed chords?",
+     "playOptions": [
+      [
+       "IV",
+       "V",
+       "I"
+      ],
+      [
+       "bVI",
+       "bVII",
+       "I"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 1,
+     "explain": "A♭, B♭, C: ♭VI–♭VII–I, the Lady Madonna climb."
+    },
+    {
+     "type": "listen",
+     "question": "Which one has a line moving inside the chord?",
+     "playOptions": [
+      [
+       "I",
+       "Imaj7",
+       {
+        "roman": "I7",
+        "function": "dominant"
+       },
+       "IV"
+      ],
+      [
+       "I",
+       "iii",
+       "vi",
+       "IV"
+      ]
+     ],
+     "options": [
+      "Progression 1",
+      "Progression 2"
+     ],
+     "answer": 0,
+     "explain": "Progression 1 is the Something line cliché: C, B, B♭, A on top."
+    },
+    {
+     "type": "text",
+     "title": "Songs to try on your own",
+     "body": "Use the steps above with the recording, and look for these tricks:\n\n**Here Comes the Sun:** the middle section repeats **♭VII – IV – I**.\n**With a Little Help from My Friends:** the chorus uses **♭VII – IV – I** too.\n**While My Guitar Gently Weeps:** a minor key with a **bass line walking down** under the chords.\n**Michelle:** a **chromatic line** falling inside a minor chord.\n\nWrite down the chords you find, then play them along with the record. If a chord sounds wrong, check the bass note first."
+    },
+    {
+     "type": "quiz",
+     "question": "A chord sounds outside the key, and right after it the song lands on the vi chord. What should you try first?",
+     "options": [
+      "The V7 of vi (III7)",
+      "The IV chord",
+      "A sus chord",
+      "The I chord again"
+     ],
+     "answer": 0,
+     "explain": "A secondary dominant: in C that's E7 before Am. You heard it in I Want to Hold Your Hand and Yesterday."
+    }
+   ]
+  }
+ ]
+}

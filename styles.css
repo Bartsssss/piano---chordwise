@@ -237,3 +237,20 @@ button:focus-visible, a:focus-visible, .key:focus-visible { outline: 3px solid v
 .backup h3 { margin: 0 0 4px; }
 .backup .row { margin-top: 12px; }
 .backup-msg { margin: 10px 0 0; font-size: .9rem; }
+
+/* ---------- playing exercises (note sequences) ---------- */
+.note-strip { display: flex; flex-wrap: wrap; gap: 4px; }
+.note-chip { display: inline-flex; flex-direction: column; align-items: center; min-width: 34px; padding: 4px 6px; border-radius: 8px;
+  background: var(--surface-2); border: 1px solid transparent; line-height: 1.15; transition: transform .15s ease; }
+.note-chip b { font-family: var(--font-display); font-size: 1rem; }
+.note-chip b + b { font-size: .8rem; color: var(--muted); }
+.note-chip small { font-size: .7rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.note-chip.current { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); box-shadow: 0 2px 0 var(--accent); animation: pop .2s ease; }
+.note-chip.next { border-color: var(--line); }
+.note-chip.passed { opacity: .45; }
+.note-chip.playing { border-color: var(--accent); }
+.hand-tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 99px; font-size: .78rem; font-weight: 600; background: var(--sub-soft); color: var(--sub); }
+.hand-tag.lh { background: var(--color-soft); color: var(--color); }
+.hand-tag.both { background: var(--tonic-soft); color: var(--tonic); }
+.practice-goal { padding: 10px 14px; border-radius: 12px; background: var(--accent-soft); display: flex; flex-direction: column; gap: 2px; }
+.practice-goal p { font-size: .92rem; margin: 0; }

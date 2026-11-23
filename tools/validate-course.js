@@ -15,6 +15,12 @@ for (const file of process.argv.slice(2)) {
         const out = [];
         if (s.type === 'play-chord') out.push(show(s, k));
         if (s.type === 'play-note') T.parseNoteName(s.note);
+        if (s.type === 'play-notes') {
+          if (!Array.isArray(s.notes) || !s.notes.length) throw new Error('play-notes needs notes');
+          s.notes.forEach(n => [].concat(n).forEach(x => { if (T.parseNoteName(x).octave === null) throw new Error('give an octave: ' + x); }));
+          ['fingers', 'fingersLH'].forEach(f => { if (s[f] && s[f].length !== s.notes.length) throw new Error(f + ' length ' + s[f].length + ' != notes ' + s.notes.length); });
+        }
+        [s.melody].concat(s.melodyOptions || []).filter(Boolean).forEach(seq => seq.forEach(x => [].concat(x).forEach(T.parseNoteName)));
         if (s.progression) s.progression.forEach(p => out.push(show(p, k)));
         if (s.play) s.play.forEach(p => out.push(show(p, k)));
         if (s.playOptions) s.playOptions.forEach(seq => seq.forEach(p => out.push(show(p, k))));
