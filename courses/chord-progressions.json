@@ -1,0 +1,449 @@
+{
+  "id": "chord-progressions",
+  "version": 1,
+  "title": "Chord Progressions",
+  "subtitle": "From I–V–IV to sevenths, inversions and sus chords",
+  "description": "Learn what Roman numerals mean, why some chords feel like home and others pull you back to it, and play every progression yourself while the app listens.",
+  "defaultKey": "C",
+  "lessons": [
+    {
+      "id": "find-c",
+      "part": "Foundations",
+      "title": "Finding C and the C major scale",
+      "summary": "Find your way around the keys and number the notes of a scale.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "The black keys are your map",
+          "body": "Black keys come in groups of **two** and **three**. The white key just left of every group of two is **C**.\n\nThe C near the middle of your piano is called middle C, or C4. Any C works for this course: the app listens for the note name, not the exact octave."
+        },
+        { "type": "play-note", "prompt": "Play any C.", "note": "C4", "explain": "That's C. Everything in this course starts here." },
+        {
+          "type": "text",
+          "title": "Numbering the scale",
+          "body": "Play the white keys from C up to the next C: **C D E F G A B C**. That's the C major scale.\n\nMusicians number these notes: C is **1**, D is **2**, E is **3**, and so on up to B, which is **7**. These numbers are called **scale degrees**, and they are the secret behind chord progressions."
+        },
+        { "type": "play-note", "prompt": "Play scale degree 5 in C major.", "note": "G4", "explain": "G is the 5th note of C major. Remember it, it becomes very important." },
+        { "type": "play-note", "prompt": "Play scale degree 3.", "note": "E4", "explain": "E is degree 3. Count C(1), D(2), E(3)." },
+        {
+          "type": "quiz",
+          "question": "In C major, which note is scale degree 4?",
+          "options": ["E", "F", "G", "A"],
+          "answer": 1,
+          "explain": "C(1) D(2) E(3) F(4). F is degree 4."
+        }
+      ]
+    },
+    {
+      "id": "triads",
+      "part": "Foundations",
+      "title": "Building a triad",
+      "summary": "Stack three notes, skipping one each time, to make a chord.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Skip a note, play a note",
+          "body": "A **triad** is three notes stacked in thirds: start on a note, skip one white key, play the next, skip one, play the next.\n\nStart on C and you get **C, E, G**. That's a C major chord. The bottom note (C) is the **root**, the middle note (E) is the **third**, and the top note (G) is the **fifth**.",
+          "examples": [{ "label": "C major", "chords": ["C"] }]
+        },
+        { "type": "play-chord", "prompt": "Play a C major chord: C, E and G together.", "chord": "C", "explain": "Bright and stable. That's the sound of a major triad." },
+        {
+          "type": "text",
+          "title": "Major and minor",
+          "body": "Start the same pattern on A and you get **A, C, E**: an A minor chord.\n\nThe difference is the third. In a **major** chord the third is 4 half steps above the root. In a **minor** chord it's 3 half steps. That one half step turns bright into dark.",
+          "examples": [{ "label": "C major then A minor", "chords": ["C", "Am"] }]
+        },
+        { "type": "play-chord", "prompt": "Play A minor: A, C and E.", "chord": "Am", "explain": "Darker, more wistful. Same stacking pattern, different starting note." },
+        {
+          "type": "listen",
+          "question": "Listen. Is this chord major or minor?",
+          "play": ["Dm"],
+          "options": ["Major", "Minor"],
+          "answer": 1,
+          "explain": "That was D minor (D, F, A). The middle note sits closer to the bottom, which gives the darker sound."
+        },
+        {
+          "type": "listen",
+          "question": "And this one?",
+          "play": ["G"],
+          "options": ["Major", "Minor"],
+          "answer": 0,
+          "explain": "G major (G, B, D). Bright and open."
+        }
+      ]
+    },
+    {
+      "id": "roman-numerals",
+      "part": "Foundations",
+      "title": "Roman numerals: chords as numbers",
+      "summary": "Build a chord on every note of the scale and name it with a numeral.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "One chord on every scale degree",
+          "body": "Build a triad on every note of C major, using only white keys. You get seven chords. We name them with **Roman numerals** for the scale degree they start on:\n\n**I** = C, **ii** = Dm, **iii** = Em, **IV** = F, **V** = G, **vi** = Am, **vii°** = B diminished.\n\n**Uppercase** means major, **lowercase** means minor, and **°** means diminished (both thirds small, a tense sound).",
+          "examples": [{ "label": "All seven chords in C", "progression": ["I", "ii", "iii", "IV", "V", "vi", "viio"] }]
+        },
+        {
+          "type": "text",
+          "title": "Why numbers instead of letters?",
+          "body": "Because the numbers work in every key. \"One five four\" (I–V–IV) is C–G–F in C major, G–D–C in G major, and D–A–G in D major. The letters change, the feeling stays the same.\n\nWhen musicians say \"it's a 1-5-4\", they're describing the **relationships** between chords, which is what your ear actually hears."
+        },
+        {
+          "type": "quiz",
+          "question": "In C major, which chord is IV?",
+          "options": ["D minor", "E minor", "F major", "G major"],
+          "answer": 2,
+          "explain": "F is the 4th note of C major, and the triad built on it (F, A, C) is major, so it's written IV."
+        },
+        {
+          "type": "quiz",
+          "question": "Why is ii written in lowercase?",
+          "options": ["It's played quietly", "It's a minor chord", "It's the second chord you play", "It's optional"],
+          "answer": 1,
+          "explain": "Lowercase means minor. ii in C major is D minor (D, F, A)."
+        },
+        { "type": "play-chord", "prompt": "Play IV in C major.", "roman": "IV", "explain": "F major: F, A, C." },
+        { "type": "play-chord", "prompt": "Play V in C major.", "roman": "V", "explain": "G major: G, B, D." }
+      ]
+    },
+    {
+      "id": "tonic",
+      "part": "Home, away and tension",
+      "title": "I: the home chord",
+      "summary": "The tonic is where music feels at rest.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Every key has a home",
+          "body": "The chord built on degree 1 is the **tonic**. Its job is to sound like **home**: stable, finished, nothing left to say.\n\nMost songs start on the tonic, wander away from it, and come back to it at the end. A progression is basically a little journey away from home and back.",
+          "examples": [{ "label": "I–IV–I", "progression": ["I", "IV", "I"] }]
+        },
+        { "type": "play-chord", "prompt": "Play the tonic of C major.", "roman": "I", "explain": "C major. Notice how nothing in it seems to want to move." },
+        {
+          "type": "listen",
+          "question": "Two short progressions. Which one sounds finished?",
+          "playOptions": [["I", "IV", "I"], ["I", "IV", "V"]],
+          "options": ["The first one", "The second one"],
+          "answer": 0,
+          "explain": "The first ends on I, the home chord. The second ends on V, which leaves you hanging. That 'hanging' feeling is the next lesson."
+        }
+      ]
+    },
+    {
+      "id": "dominant",
+      "part": "Home, away and tension",
+      "title": "V: tension that wants to go home",
+      "summary": "The dominant creates a pull back to the tonic.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Why V pulls so hard",
+          "body": "V in C major is G, B, D. Look at **B**: it sits just one half step below C. Your ear hears B as the **leading tone**, a note that badly wants to step up to C.\n\nD wants to step down to C too. So when you play V, two of its notes are leaning toward the tonic. That's **dominant** function: tension that resolves home.\n\nV going to I is called an **authentic cadence**. It's the strongest 'the end' sound in music.",
+          "examples": [{ "label": "V–I", "progression": ["V", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play V, then resolve to I.", "progression": ["V", "I"], "explain": "Feel the release when you land on C? That's the dominant doing its job." },
+        {
+          "type": "listen",
+          "question": "This one stops on V. How does it feel?",
+          "play": ["I", "IV", "V"],
+          "options": ["Finished", "Unfinished, like a question"],
+          "answer": 1,
+          "explain": "Ending on V is called a half cadence. It sounds like a comma or a question mark, which is why songwriters use it at the end of a verse to push into the chorus."
+        }
+      ]
+    },
+    {
+      "id": "subdominant",
+      "part": "Home, away and tension",
+      "title": "IV: stepping away from home",
+      "summary": "The subdominant moves away gently, without urgency.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Leaving the house",
+          "body": "IV in C major is F, A, C. It still contains C, so it doesn't feel far from home, but F and A make it feel like you've **left the house**.\n\nIV is the **subdominant**. Its job is to move away from the tonic, and it often sets up the dominant. Unlike V it has no leading tone, so the pull back home is gentle.\n\nIV going straight back to I is the **plagal cadence**, the 'amen' at the end of hymns.",
+          "examples": [{ "label": "I–IV–I (amen)", "progression": ["I", "IV", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play I, IV, then back to I.", "progression": ["I", "IV", "I"], "explain": "Notice your thumb can stay on C for all three chords if you play F as C, F, A. Shared notes make chords feel related." },
+        {
+          "type": "quiz",
+          "question": "Which chord has the strongest pull back to I?",
+          "options": ["IV", "V", "vi"],
+          "answer": 1,
+          "explain": "V, because of the leading tone B that wants to rise to C."
+        }
+      ]
+    },
+    {
+      "id": "one-four-five",
+      "part": "Home, away and tension",
+      "title": "I–IV–V–I: the full journey",
+      "summary": "Home, away, tension, home: the most basic progression in music.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Tonic, subdominant, dominant, tonic",
+          "body": "Put the three functions in order and you get a complete little story:\n\n**I** (home) → **IV** (step away) → **V** (tension) → **I** (home again).\n\nEach chord moves you further from rest until V, and then I releases everything. Thousands of folk, blues, country and rock songs are built only on I, IV and V.",
+          "examples": [{ "label": "I–IV–V–I", "progression": ["I", "IV", "V", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play I, IV, V, I.", "progression": ["I", "IV", "V", "I"], "explain": "That's the backbone of Western harmony. You'll hear it everywhere now." }
+      ]
+    },
+    {
+      "id": "one-five-four",
+      "part": "Home, away and tension",
+      "title": "I–V–IV: the rock turnaround",
+      "summary": "Why going from V to IV works, even though V 'wants' to go home.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Breaking the rule on purpose",
+          "body": "Classical harmony says V should go to I. In **I–V–IV–I**, V goes to IV instead. Theory books call that a 'backwards' move, but it's all over rock, blues and pop.\n\nWhy it works: V builds tension, then instead of snapping home, the tension **relaxes sideways** into IV. Listen to the lowest notes: **G → F → C**, a bass line stepping down and settling. IV then gives the gentle 'amen' resolution back to I.\n\nThe result feels laid-back and open rather than final and formal.",
+          "examples": [{ "label": "I–V–IV–I", "progression": ["I", "V", "IV", "I"] }, { "label": "Compare: I–IV–V–I", "progression": ["I", "IV", "V", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play the 1-5-4-1: I, V, IV, I.", "progression": ["I", "V", "IV", "I"], "explain": "That's the sound of countless rock songs. Try looping it and it starts to groove." },
+        {
+          "type": "listen",
+          "question": "Which progression ends with the stronger, more 'classical' resolution?",
+          "playOptions": [["I", "V", "IV", "I"], ["I", "IV", "V", "I"]],
+          "options": ["The first one (I–V–IV–I)", "The second one (I–IV–V–I)"],
+          "answer": 1,
+          "explain": "V–I is the strongest resolution because of the leading tone. IV–I is softer, which is exactly why rock likes it."
+        },
+        { "type": "play-progression", "prompt": "Now the same 1-5-4-1 in G major.", "key": "G", "progression": ["I", "V", "IV", "I"], "explain": "G, D, C, G. Same numbers, same feeling, different key." }
+      ]
+    },
+    {
+      "id": "six-minor",
+      "part": "Minor chords in a major key",
+      "title": "vi: home's moody twin",
+      "summary": "The relative minor shares most of its notes with the tonic.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "A tonic substitute",
+          "body": "vi in C major is A minor: A, C, E. It shares **two notes** (C and E) with the tonic C major chord. That's why it can stand in for home, but with a sadder, more emotional color.\n\nWhen V goes to vi instead of I, you get a **deceptive cadence**: your ear expects home and gets the moody twin.",
+          "examples": [{ "label": "Deceptive cadence: V–vi", "progression": ["I", "IV", "V", "vi"] }]
+        },
+        { "type": "play-chord", "prompt": "Play vi in C major.", "roman": "vi", "explain": "A minor. Compare it in your head with C major: two notes the same, one different." },
+        { "type": "play-progression", "prompt": "Play the 50s progression: I, vi, IV, V.", "progression": ["I", "vi", "IV", "V"], "explain": "Home, home's twin, away, tension. Then it loops back to I. The doo-wop sound." }
+      ]
+    },
+    {
+      "id": "pop-axis",
+      "part": "Minor chords in a major key",
+      "title": "I–V–vi–IV: the pop progression",
+      "summary": "Four chords behind a huge number of hit songs.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Why it loops so well",
+          "body": "**I–V–vi–IV** is C, G, Am, F. Read it by function: home, tension, then instead of resolving, the deceptive turn to vi, then away to IV... which leads naturally back to I to start again.\n\nIt never fully settles, so it can repeat forever without getting boring. Start it on vi instead (vi–IV–I–V) and the same four chords sound more melancholy.",
+          "examples": [{ "label": "I–V–vi–IV", "progression": ["I", "V", "vi", "IV"] }, { "label": "vi–IV–I–V", "progression": ["vi", "IV", "I", "V"] }]
+        },
+        { "type": "play-progression", "prompt": "Play I, V, vi, IV.", "progression": ["I", "V", "vi", "IV"], "explain": "You just played the chords of a few hundred hit songs." },
+        { "type": "play-progression", "prompt": "Now start on the minor: vi, IV, I, V.", "progression": ["vi", "IV", "I", "V"], "explain": "Same chords, different starting point, different mood." }
+      ]
+    },
+    {
+      "id": "two-five-one",
+      "part": "Minor chords in a major key",
+      "title": "ii and the ii–V–I",
+      "summary": "The strongest way to approach the dominant.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "ii is IV's relative",
+          "body": "ii in C major is D minor: D, F, A. It shares two notes with IV (F and A), so it does the same job: **subdominant**, stepping away and setting up V.\n\nThe root movement D → G → C falls by fifths each time, which is the strongest root motion in harmony. **ii–V–I** is the backbone of jazz and shows up constantly in pop too.\n\n(iii, E minor, is the rarest of the basic chords. It shares notes with both I and V, so it sits in between.)",
+          "examples": [{ "label": "ii–V–I", "progression": ["ii", "V", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play ii, V, I.", "progression": ["ii", "V", "I"], "explain": "Subdominant, dominant, tonic. The functions in their favorite order." },
+        {
+          "type": "quiz",
+          "question": "ii and IV share a function. Which one?",
+          "options": ["Tonic", "Subdominant", "Dominant"],
+          "answer": 1,
+          "explain": "Both are subdominant chords: they move away from home and prepare the dominant."
+        },
+        { "type": "play-progression", "prompt": "Put it all together: I, vi, ii, V, I.", "progression": ["I", "vi", "ii", "V", "I"], "explain": "Tonic, tonic substitute, subdominant, dominant, tonic." }
+      ]
+    },
+    {
+      "id": "other-keys",
+      "part": "Minor chords in a major key",
+      "title": "Same numbers, new key",
+      "summary": "Transpose any progression by thinking in numerals.",
+      "key": "G",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Numbers travel",
+          "body": "In G major the scale is G A B C D E **F♯**. So I = G, IV = C, V = D, vi = Em.\n\nIn F major the scale has a **B♭**, so IV = B♭.\n\nOnce you think in numbers, learning a song in a new key is just finding the new I.",
+          "examples": [{ "label": "I–IV–V–I in G", "key": "G", "progression": ["I", "IV", "V", "I"] }, { "label": "I–IV–V–I in F", "key": "F", "progression": ["I", "IV", "V", "I"] }]
+        },
+        {
+          "type": "quiz",
+          "question": "In G major, which chord is V?",
+          "options": ["C", "D", "E minor", "F♯ diminished"],
+          "answer": 1,
+          "explain": "Count G(1) A(2) B(3) C(4) D(5). V is D major: D, F♯, A."
+        },
+        { "type": "play-chord", "prompt": "Play V in G major.", "key": "G", "roman": "V", "explain": "D major. Note the F♯, a black key." },
+        { "type": "play-progression", "prompt": "Play I, IV, V, I in F major.", "key": "F", "progression": ["I", "IV", "V", "I"], "explain": "F, B♭, C, F." }
+      ]
+    },
+    {
+      "id": "dominant-seventh",
+      "part": "Richer chords",
+      "title": "V7: maximum pull",
+      "summary": "Adding a seventh to the dominant doubles its tension.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Four notes instead of three",
+          "body": "Keep stacking thirds on V and you get **G, B, D, F**: G7, the **dominant seventh**.\n\nThe new note F is a half step above E, and it wants to fall to E. Now B pulls up to C and F pulls down to E at the same time. B and F together form a **tritone**, the most unstable interval there is, and it squeezes into C and E.\n\nThat's why V7–I sounds even more inevitable than V–I.",
+          "examples": [{ "label": "V–I then V7–I", "progression": ["V", "I", "V7", "I"] }]
+        },
+        { "type": "play-chord", "prompt": "Play V7 in C: G, B, D and F.", "roman": "V7", "explain": "Spicy. You can drop the D if four notes is a stretch, the app is forgiving about the fifth." },
+        { "type": "play-progression", "prompt": "Play I, IV, V7, I.", "progression": ["I", "IV", "V7", "I"], "explain": "The classic blues and gospel ending." }
+      ]
+    },
+    {
+      "id": "seventh-colors",
+      "part": "Richer chords",
+      "title": "maj7 and m7: softer colors",
+      "summary": "Not every seventh adds tension. Some just add warmth.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Sevenths on every chord",
+          "body": "Add a seventh to I and you get **Cmaj7** (C, E, G, B): dreamy and soft. Add one to ii and you get **Dm7** (D, F, A, C): mellow.\n\nThese sevenths don't change the chord's function. Imaj7 is still home and ii7 is still subdominant, they just sound richer. That's the sound of jazz, soul and lo-fi.\n\n**ii7–V7–Imaj7** is the jazz version of ii–V–I.",
+          "examples": [{ "label": "ii7–V7–Imaj7", "progression": ["ii7", "V7", "Imaj7"] }]
+        },
+        { "type": "play-chord", "prompt": "Play Imaj7: C, E, G, B.", "roman": "Imaj7", "explain": "Home, but softer around the edges." },
+        { "type": "play-chord", "prompt": "Play ii7: D, F, A, C.", "roman": "ii7", "explain": "D minor seven." },
+        { "type": "play-progression", "prompt": "Play ii7, V7, Imaj7.", "progression": ["ii7", "V7", "Imaj7"], "explain": "That's the most important progression in jazz." }
+      ]
+    },
+    {
+      "id": "inversions",
+      "part": "Richer chords",
+      "title": "Inversions: same chord, different bass",
+      "summary": "Rearrange a chord's notes for smoother movement.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Turning a chord upside down",
+          "body": "C major doesn't have to be played C-E-G from the bottom. Move the C up an octave and you get **E-G-C**: the **first inversion**, written C/E ('C over E') or I⁶. Move E up too and you get **G-C-E**, the second inversion.\n\nThe chord's function stays the same, but the **bass note** changes. Inversions let the bass move by step instead of jumping, which sounds smoother.\n\nTry **I – V⁶ – vi**: C, then G with B in the bass, then A minor. The bass walks down **C → B → A**.",
+          "examples": [{ "label": "C, C/E, C/G", "chords": ["C", "C/E", "C/G"] }, { "label": "I – V⁶ – vi", "progression": ["I", { "roman": "V", "inversion": 1 }, "vi"] }]
+        },
+        { "type": "play-chord", "prompt": "Play C major in first inversion, with E as the lowest note.", "roman": "I", "inversion": 1, "checkBass": true, "explain": "E, G, C. Same chord, new bottom." },
+        { "type": "play-progression", "prompt": "Play I, V⁶ (G with B in the bass), vi. Keep the bass walking down.", "progression": ["I", { "roman": "V", "inversion": 1, "checkBass": true }, "vi"], "explain": "C → B → A in the bass. This line is all over pop ballads." }
+      ]
+    },
+    {
+      "id": "sus-chords",
+      "part": "Richer chords",
+      "title": "Sus chords: suspended tension",
+      "summary": "Replace the third with a 4th or 2nd and let it resolve.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Holding back the third",
+          "body": "A **sus4** chord swaps the third for the fourth: Gsus4 is **G, C, D**. Without the third it's neither major nor minor, it just hangs, and the C wants to drop to B.\n\nGsus4 → G → C stacks two resolutions: the suspension resolves into V, and V resolves into I.\n\nA **sus2** swaps the third for the second (Csus2 = C, D, G). It sounds open and airy rather than tense, which is why it's loved in ambient and worship music.",
+          "examples": [{ "label": "Vsus4–V–I", "progression": ["Vsus4", "V", "I"] }, { "label": "Csus2 then C", "chords": ["Csus2", "C"] }]
+        },
+        { "type": "play-chord", "prompt": "Play Gsus4: G, C, D.", "roman": "Vsus4", "explain": "Unresolved. It wants the C to fall to B." },
+        { "type": "play-progression", "prompt": "Play Vsus4, V, I.", "progression": ["Vsus4", "V", "I"], "explain": "Tension, smaller tension, home." },
+        { "type": "play-chord", "prompt": "Play Csus2: C, D, G.", "chord": "Csus2", "function": "tonic", "explain": "Open and floating. Still feels like home, just less settled." }
+      ]
+    },
+    {
+      "id": "color-chords",
+      "part": "Richer chords",
+      "title": "Color chords: vii°, iv and ♭VII",
+      "summary": "Chords from outside the key that add surprise.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "The diminished chord",
+          "body": "vii° in C is **B, D, F**: two small thirds stacked, very tense. Look closely: it's G7 without the G. So it does the same job as V, **dominant**, and resolves to I.",
+          "examples": [{ "label": "vii°–I", "progression": ["viio", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play vii°, then I.", "progression": ["viio", "I"], "explain": "B rises to C, F falls to E. Same pull as V7." },
+        {
+          "type": "text",
+          "title": "Borrowing from the minor key",
+          "body": "You can borrow chords from C minor while staying in C major.\n\n**iv** (F minor: F, A♭, C) after IV gives a bittersweet, nostalgic sigh: the A♭ drops to G.\n\n**♭VII** (B♭ major: B♭, D, F) is the classic rock 'big' chord. I–♭VII–IV–I sounds bold and anthemic.",
+          "examples": [{ "label": "I–IV–iv–I", "progression": ["I", "IV", "iv", "I"] }, { "label": "I–♭VII–IV–I", "progression": ["I", "bVII", "IV", "I"] }]
+        },
+        { "type": "play-progression", "prompt": "Play I, IV, iv, I.", "progression": ["I", "IV", "iv", "I"], "explain": "Just one note changes from IV to iv: A becomes A♭. Huge emotional effect." },
+        { "type": "play-progression", "prompt": "Play I, ♭VII, IV, I.", "progression": ["I", "bVII", "IV", "I"], "explain": "That B♭ chord comes from outside the key, and it sounds like a stadium." }
+      ]
+    },
+    {
+      "id": "minor-keys",
+      "part": "Richer chords",
+      "title": "Minor keys: i, iv and the major V",
+      "summary": "How progressions work when home itself is minor.",
+      "key": "Am",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Home can be sad",
+          "body": "In A minor the tonic is **i** (A minor). The natural chords are i, ii°, III, iv, v, VI, VII.\n\nThere's a catch: v (E minor) has G, which is a whole step below A. No leading tone, so it doesn't pull home very hard. Composers fix this by raising G to **G♯**, turning v into a major **V** (E, G♯, B). Now there's a half step pulling up to A again.",
+          "examples": [{ "label": "i–iv–v–i (weak)", "key": "Am", "progression": ["i", "iv", "v", "i"] }, { "label": "i–iv–V–i (strong)", "key": "Am", "progression": ["i", "iv", "V", "i"] }]
+        },
+        { "type": "play-progression", "prompt": "Play i, iv, V, i in A minor. V is E major, with a G♯.", "key": "Am", "progression": ["i", "iv", "V", "i"], "explain": "Am, Dm, E, Am. The G♯ in E major gives the dominant its pull." },
+        {
+          "type": "text",
+          "title": "The epic minor loop",
+          "body": "**i–VI–III–VII** (Am, F, C, G) uses only notes from the key and loops endlessly. Notice it's the same four chords as the pop progression, just starting from the minor chord. Film scores and anthems love it.",
+          "examples": [{ "label": "i–VI–III–VII", "key": "Am", "progression": ["i", "VI", "III", { "roman": "VII", "function": "dominant" }] }]
+        },
+        { "type": "play-progression", "prompt": "Play i, VI, III, VII.", "key": "Am", "progression": ["i", "VI", "III", { "roman": "VII", "function": "dominant" }], "explain": "Am, F, C, G. Dark, but powerful." }
+      ]
+    },
+    {
+      "id": "put-together",
+      "part": "Richer chords",
+      "title": "Putting it all together",
+      "summary": "Longer progressions that mix everything you've learned.",
+      "key": "C",
+      "steps": [
+        {
+          "type": "text",
+          "title": "Think in functions",
+          "body": "Every chord you've learned does one of three jobs:\n\n**Tonic** (home): I, vi, iii, Imaj7\n**Subdominant** (away): IV, ii, ii7, and borrowed iv\n**Dominant** (tension): V, V7, Vsus4, vii°\n\nMost progressions follow the same path: tonic → subdominant → dominant → tonic. When you hear a new song, try labelling each chord with its job."
+        },
+        { "type": "play-progression", "prompt": "Play I, vi, ii7, V7, I.", "progression": ["I", "vi", "ii7", "V7", "I"], "explain": "The jazz-flavored turnaround." },
+        { "type": "play-progression", "prompt": "Play I, V⁶, vi, IV, Vsus4, V, I.", "progression": ["I", { "roman": "V", "inversion": 1 }, "vi", "IV", "Vsus4", "V", "I"], "explain": "A ballad progression using inversions and a suspension. You've learned a lot." },
+        {
+          "type": "listen",
+          "question": "Listen and label the last chord's function.",
+          "play": ["I", "vi", "ii", "V7"],
+          "options": ["Tonic", "Subdominant", "Dominant"],
+          "answer": 2,
+          "explain": "It ended on V7, the dominant. It's begging to go back to I."
+        }
+      ]
+    }
+  ]
+}

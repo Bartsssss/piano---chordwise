@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chordwise</title>
+<meta name="description" content="Learn piano chord progressions. Play along and the app listens through your microphone.">
+<meta name="theme-color" content="#14161c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<!--INLINE:head-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!--/INLINE:head-->
+</head>
+<body>
+<!--INLINE:body-->
+<div id="app" class="app" aria-live="polite"></div>
+<script src="theory.js"></script>
+<script src="detect.js"></script>
+<script src="audio.js"></script>
+<script src="app.js"></script>
+<script>
+  if ('serviceWorker' in navigator && location.protocol === 'https:' || location.hostname === 'localhost') {
+    try { navigator.serviceWorker && navigator.serviceWorker.register('sw.js').catch(function () {}); } catch (e) {}
+  }
+</script>
+<!--/INLINE:body-->
+</body>
+</html>
